@@ -29,8 +29,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="rHB-x8-ZQo" id="PYy-LM-4Xo"/>
-                            <outlet property="delegate" destination="rHB-x8-ZQo" id="EAu-mf-SkS"/>
+                            <outlet property="dataSource" destination="rHB-x8-ZQo" id="qGF-mL-UqI"/>
+                            <outlet property="delegate" destination="rHB-x8-ZQo" id="GKR-0n-ed9"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="通讯录" id="h7n-Df-uEi">
@@ -48,18 +48,18 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sue-3N-U9j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="499" y="465"/>
+            <point key="canvasLocation" x="423" y="473"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--通讯录-->
         <scene sceneID="vOl-UL-yAc">
             <objects>
-                <navigationController id="GXp-GN-AkA" sceneMemberID="viewController">
+                <navigationController title="通讯录" id="GXp-GN-AkA" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="U5R-tv-LvJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="rHB-x8-ZQo" kind="relationship" relationship="rootViewController" id="wLi-qf-k4E"/>
+                        <segue destination="rHB-x8-ZQo" kind="relationship" relationship="rootViewController" id="Ehy-kb-nId"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q7e-52-3dr" userLabel="First Responder" sceneMemberID="firstResponder"/>

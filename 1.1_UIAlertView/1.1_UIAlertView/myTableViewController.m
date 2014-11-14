@@ -121,7 +121,7 @@
     [alert0 show];
     
     //实现响应
-
+#pragma - mark AlertView Delegate Methods
     - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
         NSString *b = [alertView buttonTitleAtIndex:buttonIndex];
         if ([b isEpualToString:@"Delete"]) {

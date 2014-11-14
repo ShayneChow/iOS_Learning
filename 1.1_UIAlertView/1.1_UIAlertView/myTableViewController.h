@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface myTableViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
-{
+@interface myTableViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>{
     NSMutableArray *a;      //声明一个可变数组
 }
 
