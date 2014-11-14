@@ -14,6 +14,7 @@
 		26C4F34F1A15C90F003CBFFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26C4F34E1A15C90F003CBFFF /* Images.xcassets */; };
 		26C4F3521A15C90F003CBFFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C4F3501A15C90F003CBFFF /* LaunchScreen.xib */; };
 		26C4F35E1A15C90F003CBFFF /* __1_UIAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C4F35D1A15C90F003CBFFF /* __1_UIAlertViewTests.m */; };
+		26C4F3691A15D26F003CBFFF /* myTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C4F3681A15D26F003CBFFF /* myTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		26C4F3571A15C90F003CBFFF /* 1.1_UIAlertViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1.1_UIAlertViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C4F35C1A15C90F003CBFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26C4F35D1A15C90F003CBFFF /* __1_UIAlertViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __1_UIAlertViewTests.m; sourceTree = "<group>"; };
+		26C4F3671A15D26F003CBFFF /* myTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTableViewController.h; sourceTree = "<group>"; };
+		26C4F3681A15D26F003CBFFF /* myTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				26C4F3481A15C90F003CBFFF /* ViewController.h */,
 				26C4F3491A15C90F003CBFFF /* ViewController.m */,
 				26C4F34B1A15C90F003CBFFF /* Main.storyboard */,
+				26C4F3671A15D26F003CBFFF /* myTableViewController.h */,
+				26C4F3681A15D26F003CBFFF /* myTableViewController.m */,
 				26C4F34E1A15C90F003CBFFF /* Images.xcassets */,
 				26C4F3501A15C90F003CBFFF /* LaunchScreen.xib */,
 				26C4F3411A15C90F003CBFFF /* Supporting Files */,
@@ -222,6 +227,7 @@
 				26C4F34A1A15C90F003CBFFF /* ViewController.m in Sources */,
 				26C4F3471A15C90F003CBFFF /* AppDelegate.m in Sources */,
 				26C4F3441A15C90F003CBFFF /* main.m in Sources */,
+				26C4F3691A15D26F003CBFFF /* myTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
