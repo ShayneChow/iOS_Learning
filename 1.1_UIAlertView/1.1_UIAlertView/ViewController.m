@@ -24,4 +24,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btn_alert:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"点击按钮弹出警告窗口" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:@"other", nil];
+    [alert show];
+}
 @end

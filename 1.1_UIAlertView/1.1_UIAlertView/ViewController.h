@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)btn_alert:(id)sender;
 
 @end
 
