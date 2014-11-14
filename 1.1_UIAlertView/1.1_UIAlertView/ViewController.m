@@ -25,7 +25,8 @@
 }
 
 - (IBAction)btn_alert:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"点击按钮弹出警告窗口" delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请输入用户名及密码" delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK",nil];
+    alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;   //更改警告视图的样式，加入文本框。
     [alert show];
 }
 @end
