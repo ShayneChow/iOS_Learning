@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIActionSheetDelegate>{
+    
+    IBOutlet UITextView *tv1;
+    IBOutlet UILabel *lable1;
+}
 
 - (IBAction)btn_as:(id)sender;
 
