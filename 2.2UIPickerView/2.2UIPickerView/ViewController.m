@@ -20,6 +20,7 @@
 //    [self.view addSubview:picker];
     
     a=[[NSArray alloc] initWithObjects:@"A",@"B",@"C",@"D",@"E",@"F", nil];
+    b=[[NSArray alloc] initWithObjects:@"able",@"ant",@"at",@"bey",@"book",@"breed",@"car",@"cat",@"day",@"data", nil];
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -31,16 +32,26 @@
 
 //设置自定义选择器显示的栏
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
-    return 1;
+    return 2;
 }
 //设置自定义选择器每栏显示的行数
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return [a count];
+//    return [a count];
+    if (component == 0) {
+        return [a count];
+    }else{
+        return [b count];
+    }
 }
 
 //填充内容
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+//        return [a objectAtIndex:row];
+    if (component == 0) {
         return [a objectAtIndex:row];
+    }else{
+        return [b objectAtIndex:row];
+    }
 }
 
 @end

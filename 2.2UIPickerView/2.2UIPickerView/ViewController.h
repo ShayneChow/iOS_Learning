@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController<UIPickerViewDelegate,UIPickerViewDataSource>{
     NSArray *a;
+    NSArray *b;
 }
 
 
