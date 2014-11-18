@@ -17,7 +17,9 @@
 - (void)viewDidLoad {
     //创建日期选择器
     UIDatePicker *date=[[UIDatePicker alloc] initWithFrame:CGRectMake(10, 50, 200, 180)];
-    date.datePickerMode=UIDatePickerModeCountDownTimer;
+    NSLocale *locale=[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+    date.locale=locale;
+    //date.datePickerMode=UIDatePickerModeCountDownTimer;
     [self.view addSubview:date];
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
