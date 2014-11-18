@@ -8,8 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
 
+    IBOutlet UITextField *name;
+    IBOutlet UITextField *phone;
+    IBOutlet UITextField *bathday;
+    IBOutlet UIDatePicker *date;
+}
+
+
+- (IBAction)btn_time:(id)sender;
+- (IBAction)setText:(id)sender;
+- (IBAction)setDate:(id)sender;
+- (IBAction)btn_save:(id)sender;
 
 @end
 

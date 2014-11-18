@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263718BF1A1AE3F90097D5BE /* bathdayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263718BE1A1AE3F90097D5BE /* bathdayViewController.m */; };
 		26FF61FD1A19CC6900168CD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FF61FC1A19CC6900168CD1 /* main.m */; };
 		26FF62001A19CC6900168CD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FF61FF1A19CC6900168CD1 /* AppDelegate.m */; };
 		26FF62031A19CC6900168CD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FF62021A19CC6900168CD1 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		263718BD1A1AE3F90097D5BE /* bathdayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bathdayViewController.h; sourceTree = "<group>"; };
+		263718BE1A1AE3F90097D5BE /* bathdayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bathdayViewController.m; sourceTree = "<group>"; };
 		26FF61F71A19CC6900168CD1 /* 2.1UIDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2.1UIDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FF61FB1A19CC6900168CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26FF61FC1A19CC6900168CD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				26FF62011A19CC6900168CD1 /* ViewController.h */,
 				26FF62021A19CC6900168CD1 /* ViewController.m */,
 				26FF62041A19CC6900168CD1 /* Main.storyboard */,
+				263718BD1A1AE3F90097D5BE /* bathdayViewController.h */,
+				263718BE1A1AE3F90097D5BE /* bathdayViewController.m */,
 				26FF62071A19CC6900168CD1 /* Images.xcassets */,
 				26FF62091A19CC6900168CD1 /* LaunchScreen.xib */,
 				26FF61FA1A19CC6900168CD1 /* Supporting Files */,
@@ -221,6 +226,7 @@
 			files = (
 				26FF62031A19CC6900168CD1 /* ViewController.m in Sources */,
 				26FF62001A19CC6900168CD1 /* AppDelegate.m in Sources */,
+				263718BF1A1AE3F90097D5BE /* bathdayViewController.m in Sources */,
 				26FF61FD1A19CC6900168CD1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +418,7 @@
 				26FF621C1A19CC6900168CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26FF621D1A19CC6900168CD1 /* Build configuration list for PBXNativeTarget "2.1UIDatePickerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				26FF621F1A19CC6900168CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
