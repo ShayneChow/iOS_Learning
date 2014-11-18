@@ -15,8 +15,6 @@
 
 @implementation ViewController
 
-//@synthesize string;
-
 - (void)viewDidLoad {
     //创建日期选择器
 //    UIDatePicker *date=[[UIDatePicker alloc] initWithFrame:CGRectMake(10, 50, 200, 180)];
