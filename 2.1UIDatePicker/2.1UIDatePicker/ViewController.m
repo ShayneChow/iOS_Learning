@@ -19,6 +19,7 @@
     UIDatePicker *date=[[UIDatePicker alloc] initWithFrame:CGRectMake(10, 50, 200, 180)];
     NSLocale *locale=[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
     date.locale=locale;
+    date.minuteInterval=5;
     //date.datePickerMode=UIDatePickerModeCountDownTimer;
     [self.view addSubview:date];
     [super viewDidLoad];
