@@ -14,6 +14,9 @@
 		26AA9C151A1B4B4F009C2945 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AA9C141A1B4B4F009C2945 /* Images.xcassets */; };
 		26AA9C181A1B4B4F009C2945 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26AA9C161A1B4B4F009C2945 /* LaunchScreen.xib */; };
 		26AA9C241A1B4B4F009C2945 /* __1CLLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AA9C231A1B4B4F009C2945 /* __1CLLocationTests.m */; };
+		26AA9C2E1A1B4FCB009C2945 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AA9C2D1A1B4FCB009C2945 /* CoreLocation.framework */; };
+		26AA9C301A1B4FEB009C2945 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AA9C2F1A1B4FEB009C2945 /* Foundation.framework */; };
+		26AA9C321A1B4FF7009C2945 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AA9C311A1B4FF7009C2945 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		26AA9C1D1A1B4B4F009C2945 /* 3.1CLLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3.1CLLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AA9C221A1B4B4F009C2945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26AA9C231A1B4B4F009C2945 /* __1CLLocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __1CLLocationTests.m; sourceTree = "<group>"; };
+		26AA9C2D1A1B4FCB009C2945 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		26AA9C2F1A1B4FEB009C2945 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		26AA9C311A1B4FF7009C2945 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26AA9C321A1B4FF7009C2945 /* UIKit.framework in Frameworks */,
+				26AA9C301A1B4FEB009C2945 /* Foundation.framework in Frameworks */,
+				26AA9C2E1A1B4FCB009C2945 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,9 @@
 		26AA9BFB1A1B4B4F009C2945 = {
 			isa = PBXGroup;
 			children = (
+				26AA9C311A1B4FF7009C2945 /* UIKit.framework */,
+				26AA9C2F1A1B4FEB009C2945 /* Foundation.framework */,
+				26AA9C2D1A1B4FCB009C2945 /* CoreLocation.framework */,
 				26AA9C061A1B4B4F009C2945 /* 3.1CLLocation */,
 				26AA9C201A1B4B4F009C2945 /* 3.1CLLocationTests */,
 				26AA9C051A1B4B4F009C2945 /* Products */,
@@ -344,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 3.1CLLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 3.1CLLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

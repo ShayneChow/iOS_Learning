@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<CLLocationManagerDelegate>{
+    
+    IBOutlet UILabel *lable_height;
+    IBOutlet UILabel *lable_latitude;
+    IBOutlet UILabel *lable_longitude;
+    CLLocationManager *manager;
+}
 
 
 @end
