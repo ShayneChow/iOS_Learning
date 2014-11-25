@@ -11,6 +11,9 @@
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIWebView *web;
+@property (strong, nonatomic) IBOutlet UITextField *Textfield;
+
+- (IBAction)Close:(id)sender;
 
 @end
 
