@@ -23,7 +23,8 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     //加载网址对应的网页内容
     [_web loadRequest:request];
-    _web.dataDetectorTypes = UIDataDetectorTypeAll;
+    _web.dataDetectorTypes = UIDataDetectorTypeAll; //自动识别网页内容
+    _web.scalesPageToFit = YES;     //自动放缩
 //    [self.view addSubview:web];
 //    NSString *html = @"This is <font color = blue><font size = 35>HTML";
 //    [_web loadHTMLString:html baseURL:nil];
