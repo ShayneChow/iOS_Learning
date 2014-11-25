@@ -15,6 +15,10 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
+    UIWebView *web = [[UIWebView alloc] initWithFrame:CGRectMake(20, 50, 270, 200)];
+    [self.view addSubview:web];
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
