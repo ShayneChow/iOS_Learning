@@ -16,16 +16,16 @@
 
 - (void)viewDidLoad {
     
-//    UIWebView *web = [[UIWebView alloc] initWithFrame:CGRectMake(20, 50, 270, 200)];
-//    [self.view addSubview:web];
+    UIWebView *web = [[UIWebView alloc] initWithFrame:CGRectMake(0, 20, 320, 560)];
     
     //创建 NSURL 对象，初始化网址
     NSURL *url = [NSURL URLWithString:@"http://www.baidu.com/"];
     //创建 NSURLRequest 对象，传递网址
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     //加载网址对应的网页内容
-    [_web loadRequest:request];
+    [web loadRequest:request];
     
+    [self.view addSubview:web];
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
