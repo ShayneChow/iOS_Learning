@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RatingView.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    RatingView *view = [[RatingView alloc] initWithFrame:CGRectMake(100, 100, 200, 100)];
+    view.backgroundColor = [UIColor redColor];
+    view.alpha = 1;
+    
+    [self.window addSubview:view];
+    
     return YES;
 }
 
