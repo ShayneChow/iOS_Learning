@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RatingView : UIView
+typedef enum kRatingViewStyle {
+    kSmallStyle  = 0,
+    kNormalStyle = 1
+}kRatingViewStyle;
+
+@interface RatingView : UIView{
+@private
+    UIView  *_baseView;
+    UILabel *_ratingLabel;
+    NSMutableArray *_yellowStarsArray;
+    NSMutableArray *_grayStarsArray;
+}
+
+@property (nonatomic, assign) kRatingViewStyle style;
+@property (nonatomic, assign) CGFloat rating;
 
 @end

@@ -18,10 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];  //绑定启动页
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
-    RatingView *view = [[RatingView alloc] initWithFrame:CGRectMake(100, 100, 200, 100)];
+    RatingView *view = [[RatingView alloc] initWithFrame:CGRectMake(100, 100, 0, 0)];
+    view.style = kNormalStyle;
     view.backgroundColor = [UIColor redColor];
-    view.alpha = 1;
+    view.rating = 5;
     
     [self.window addSubview:view];
     
