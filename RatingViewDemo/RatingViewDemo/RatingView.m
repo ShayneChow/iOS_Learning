@@ -30,7 +30,7 @@
     if (self) {
         [self initGrayStarView];
         [self initYellowStarView];
-        [self initRatingLable];
+        [self initRatingLabel];
     }
     return self;
 }
@@ -63,10 +63,10 @@
     }
 }
 
-- (void)initRatingLable{
-    UILabel *_ratingLable = [[UILabel alloc] initWithFrame:CGRectZero];
+- (void)initRatingLabel{
+    _ratingLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     _ratingLabel.backgroundColor = [UIColor clearColor];
-    [self addSubview:_ratingLable];
+    [self addSubview:_ratingLabel];
 }
 
 - (void)setRating:(CGFloat)rating
