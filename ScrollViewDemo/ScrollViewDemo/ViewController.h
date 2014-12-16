@@ -17,5 +17,9 @@
 @property (strong, nonatomic) UILabel *label_page1_2;
 @property (strong, nonatomic) UILabel *label_page1_3;
 
+@property (strong, nonatomic) UILabel *label_page2_1;
+@property (strong, nonatomic) UILabel *label_page2_2;
+@property (strong, nonatomic) UILabel *label_page2_3;
+
 @end
 
