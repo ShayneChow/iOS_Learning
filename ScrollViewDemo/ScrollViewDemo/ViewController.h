@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate>
 
+@property (strong, nonatomic) UIScrollView *scrollView;//这是基本！
+
+@property (strong, nonatomic) UIImageView *girlImageView;
+@property (strong, nonatomic) UILabel *label_page1_1;
+@property (strong, nonatomic) UILabel *label_page1_2;
+@property (strong, nonatomic) UILabel *label_page1_3;
 
 @end
 
