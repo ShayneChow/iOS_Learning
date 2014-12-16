@@ -42,30 +42,43 @@
     _scrollView.showsHorizontalScrollIndicator = NO;//不要显示滚动条~
     _scrollView.backgroundColor = [UIColor purpleColor];
     
-    UILabel *label_page1_1 = [[UILabel alloc] initWithFrame:CGRectMake(140, 200, 1000, 20)];
-    label_page1_1.text = @"我要买iPhone6！";
-    label_page1_1.font = [UIFont systemFontOfSize:18.0f];
-    label_page1_1.textColor = [UIColor redColor];
-    [label_page1_1 sizeToFit];
-    [self.scrollView addSubview:label_page1_1];
+    self.label_page1_1 = [[UILabel alloc] initWithFrame:CGRectMake(140, 200, 1000, 20)];
+    self.label_page1_1.text = @"我要买iPhone6！";
+    self.label_page1_1.font = [UIFont systemFontOfSize:18.0f];
+    self.label_page1_1.textColor = [UIColor redColor];
+    [self.label_page1_1 sizeToFit];
+    [self.scrollView addSubview:self.label_page1_1];
     
-    UILabel *label_page1_2 = [[UILabel alloc] initWithFrame:CGRectMake(140, 240, 1000, 20)];
-    label_page1_2.text = @"我要看医生演唱会~~~~";
-    label_page1_2.font = [UIFont systemFontOfSize:18.0f];
-    label_page1_2.textColor = [UIColor redColor];
-    [label_page1_2 sizeToFit];
-    [self.scrollView addSubview:label_page1_2];
+    self.label_page1_2 = [[UILabel alloc] initWithFrame:CGRectMake(140, 240, 1000, 20)];
+    self.label_page1_2.text = @"我要看医生演唱会~~~~";
+    self.label_page1_2.font = [UIFont systemFontOfSize:18.0f];
+    self.label_page1_2.textColor = [UIColor blackColor];
+    [self.label_page1_2 sizeToFit];
+    [self.scrollView addSubview:self.label_page1_2];
     
-    UILabel *label_page1_3 = [[UILabel alloc] initWithFrame:CGRectMake(140, 280, 1000, 20)];
-    label_page1_3.text = @"我要去大理！";
-    label_page1_3.font = [UIFont systemFontOfSize:18.0f];
-    label_page1_3.textColor = [UIColor redColor];
-    [label_page1_3 sizeToFit];
-    [self.scrollView addSubview:label_page1_3];
+    self.label_page1_3 = [[UILabel alloc] initWithFrame:CGRectMake(140, 280, 1000, 20)];
+    self.label_page1_3.text = @"我要去大理！";
+    self.label_page1_3.font = [UIFont systemFontOfSize:18.0f];
+    self.label_page1_3.textColor = [UIColor orangeColor];
+    [self.label_page1_3 sizeToFit];
+    [self.scrollView addSubview:self.label_page1_3];
     
     self.girlImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon"]];
     self.girlImageView.frame = CGRectMake(100, screenSize.height - 200 - 50, 200, 200);
     [self.scrollView addSubview:self.girlImageView];
+    
+    self.girlImageView.transform = CGAffineTransformMakeTranslation(-200, 0);
+    self.label_page1_1.transform = CGAffineTransformMakeTranslation(- 100, 0);
+    self.label_page1_2.transform = CGAffineTransformMakeTranslation(100, 0);
+    self.label_page1_3.transform = CGAffineTransformMakeTranslation(- 120, 0);
+    
+    [UIView animateWithDuration:0.7
+                     animations:^{
+                         self.girlImageView.transform = CGAffineTransformMakeTranslation(0, 0);
+                         self.label_page1_1.transform = CGAffineTransformMakeTranslation(0, 0);
+                         self.label_page1_2.transform = CGAffineTransformMakeTranslation(0, 0);
+                         self.label_page1_3.transform = CGAffineTransformMakeTranslation(0, 0);
+                     }];
     
     [self.view addSubview:_scrollView];
 }
