@@ -25,6 +25,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
 //初始化 scrollview
 - (void)initScrollView
 {
@@ -39,6 +41,31 @@
     _scrollView.delegate = self;
     _scrollView.showsHorizontalScrollIndicator = NO;//不要显示滚动条~
     _scrollView.backgroundColor = [UIColor purpleColor];
+    
+    UILabel *label_page1_1 = [[UILabel alloc] initWithFrame:CGRectMake(140, 200, 1000, 20)];
+    label_page1_1.text = @"我要买iPhone6！";
+    label_page1_1.font = [UIFont systemFontOfSize:18.0f];
+    label_page1_1.textColor = [UIColor redColor];
+    [label_page1_1 sizeToFit];
+    [self.scrollView addSubview:label_page1_1];
+    
+    UILabel *label_page1_2 = [[UILabel alloc] initWithFrame:CGRectMake(140, 240, 1000, 20)];
+    label_page1_2.text = @"我要看医生演唱会~~~~";
+    label_page1_2.font = [UIFont systemFontOfSize:18.0f];
+    label_page1_2.textColor = [UIColor redColor];
+    [label_page1_2 sizeToFit];
+    [self.scrollView addSubview:label_page1_2];
+    
+    UILabel *label_page1_3 = [[UILabel alloc] initWithFrame:CGRectMake(140, 280, 1000, 20)];
+    label_page1_3.text = @"我要去大理！";
+    label_page1_3.font = [UIFont systemFontOfSize:18.0f];
+    label_page1_3.textColor = [UIColor redColor];
+    [label_page1_3 sizeToFit];
+    [self.scrollView addSubview:label_page1_3];
+    
+    self.girlImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon"]];
+    self.girlImageView.frame = CGRectMake(100, screenSize.height - 200 - 50, 200, 200);
+    [self.scrollView addSubview:self.girlImageView];
     
     [self.view addSubview:_scrollView];
 }

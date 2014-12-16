@@ -14,6 +14,7 @@
 		26C23F491A40373E0025C220 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26C23F481A40373E0025C220 /* Images.xcassets */; };
 		26C23F4C1A40373E0025C220 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C23F4A1A40373E0025C220 /* LaunchScreen.xib */; };
 		26C23F581A40373E0025C220 /* ScrollViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C23F571A40373E0025C220 /* ScrollViewDemoTests.m */; };
+		26C23F651A4048B80025C220 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26C23F641A4048B80025C220 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		26C23F511A40373E0025C220 /* ScrollViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C23F561A40373E0025C220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26C23F571A40373E0025C220 /* ScrollViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewDemoTests.m; sourceTree = "<group>"; };
+		26C23F641A4048B80025C220 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		26C23F3B1A40373E0025C220 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26C23F641A4048B80025C220 /* icon@2x.png */,
 				26C23F3C1A40373E0025C220 /* Info.plist */,
 				26C23F3D1A40373E0025C220 /* main.m */,
 			);
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26C23F471A40373E0025C220 /* Main.storyboard in Resources */,
+				26C23F651A4048B80025C220 /* icon@2x.png in Resources */,
 				26C23F4C1A40373E0025C220 /* LaunchScreen.xib in Resources */,
 				26C23F491A40373E0025C220 /* Images.xcassets in Resources */,
 			);
