@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  1.1_UIAlertView
+//  1.3_UIAlertController
 //
-//  Created by choushayne on 14/11/14.
+//  Created by choushayne on 14/12/23.
 //  Copyright (c) 2014年 ShayneChow. All rights reserved.
 //
 

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  1.1_UIAlertView
+//  1.3_UIAlertController
 //
-//  Created by choushayne on 14/11/14.
+//  Created by choushayne on 14/12/23.
 //  Copyright (c) 2014年 ShayneChow. All rights reserved.
 //
 
@@ -16,14 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 350, 480)];
-    view.backgroundColor = [UIColor purpleColor];
-    [self.window addSubview:view];
-    
+    // Override point for customization after application launch.
     return YES;
 }
 
