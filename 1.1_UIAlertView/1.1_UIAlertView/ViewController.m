@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  1.3_UIAlertController
+//  1.1_UIAlertView
 //
-//  Created by choushayne on 14/12/23.
+//  Created by choushayne on 14/11/14.
 //  Copyright (c) 2014年 ShayneChow. All rights reserved.
 //
 
@@ -17,8 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [UIColor purpleColor];
-    [self buttonForOld];
+    [self alertViewInit];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,26 +25,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)buttonForOld{
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(90,100,140,40);
-    
-    [btn setTitle:@"UIAlertView" forState:UIControlStateNormal];//设置btn标题
-
-//    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];//设置标题颜色
-    
-    btn.showsTouchWhenHighlighted = YES;
-    
-    [btn addTarget:self action:@selector(touchUpInside) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:btn];
-}
-
-- (void)touchUpInside{
-    NSLog(@"touchUpInside");
-    [self alertViewInit];
-}
-
+#pragma marks -- UIAlertView init --
 - (void)alertViewInit{
     //初始化AlertView
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"AlertViewTest"
@@ -75,5 +55,43 @@
     //显示AlertView
     [alert show];
 }
+
+#pragma marks -- UIAlertViewDelegate --
+//根据被点击按钮的索引处理点击事件
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"clickButtonAtIndex:%d",buttonIndex);
+}
+
+//AlertView已经消失时执行的事件
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"didDismissWithButtonIndex");
+}
+
+//ALertView即将消失时的事件
+-(void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"willDismissWithButtonIndex");
+}
+
+//AlertView的取消按钮的事件
+-(void)alertViewCancel:(UIAlertView *)alertView
+{
+    NSLog(@"alertViewCancel");
+}
+
+//AlertView已经显示时的事件
+-(void)didPresentAlertView:(UIAlertView *)alertView
+{
+    NSLog(@"didPresentAlertView");
+}
+
+//AlertView即将显示时
+-(void)willPresentAlertView:(UIAlertView *)alertView
+{
+    NSLog(@"willPresentAlertView");
+}
+
 
 @end
