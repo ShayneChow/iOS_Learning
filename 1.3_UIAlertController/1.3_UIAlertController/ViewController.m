@@ -89,8 +89,23 @@
 - (void)alertControllerInit{
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"标题" message:@"这个是UIAlertController的默认样式" preferredStyle:UIAlertControllerStyleAlert];
     
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField){
+        textField.placeholder = @"登录";
+    }];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"密码";
+        textField.secureTextEntry = YES;
+    }];
+    
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        UITextField *login = alertController.textFields.firstObject;
+        UITextField *password = alertController.textFields.lastObject;
+        NSLog(@"Login: %@",login.text);
+        NSLog(@"Password: %@",password.text);
+    }];
+    UIAlertAction *resetAction = [UIAlertAction actionWithTitle:@"重置" style:UIAlertActionStyleDestructive handler:nil];
+    [alertController addAction:resetAction];
     [alertController addAction:cancelAction];
     [alertController addAction:okAction];
     
