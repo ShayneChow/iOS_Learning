@@ -1,20 +1,18 @@
 //
-//  PlayersViewController.m
+//  PlayerDetailsViewController.m
 //  StoryBoardDemo
 //
-//  Created by choushayne on 14/12/24.
+//  Created by choushayne on 14/12/25.
 //  Copyright (c) 2014年 ShayneChow. All rights reserved.
 //
 
-#import "PlayersViewController.h"
-#import "Player.h"
-#import "PlayerCell.h"
+#import "PlayerDetailsViewController.h"
 
-@interface PlayersViewController ()
+@interface PlayerDetailsViewController ()
 
 @end
 
-@implementation PlayersViewController
+@implementation PlayerDetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,59 +32,26 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
     // Return the number of rows in the section.
-    return [self.players count];
+    return 0;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (IBAction)cancel:(id)sender
 {
-    PlayerCell *cell = (PlayerCell *)[tableView dequeueReusableCellWithIdentifier:@"PlayerCell"];
-    
-    Player *player = (self.players)[indexPath.row];
-    cell.nameLabel.text = player.name;
-    cell.gameLabel.text = player.game;
-    cell.ratingImageView.image = [self imageForRating:player.rating];
-    
-    return cell;
+    [self.delegate playerDetailsViewControllerDidCancel:self];
+    NSLog(@"DidCancel");
 }
-
-- (UIImage *)imageForRating:(int)rating
+- (IBAction)done:(id)sender
 {
-    switch (rating) {
-        case 1: return [UIImage imageNamed:@"1StarSmall"];
-        case 2: return [UIImage imageNamed:@"2StarsSmall"];
-        case 3: return [UIImage imageNamed:@"3StarsSmall"];
-        case 4: return [UIImage imageNamed:@"4StarsSmall"];
-        case 5: return [UIImage imageNamed:@"5StarsSmall"];
-    }
-    return nil;
-}
-
-#pragma mark - PlayerDetailsViewControllerDelegate
-
-- (void)playerDetailsViewControllerDidCancel:(PlayerDetailsViewController *)controller
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)playerDetailsViewControllerDidSave:(PlayerDetailsViewController *)controller
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"AddPlayer"]) {
-        
-        UINavigationController *navigationController = segue.destinationViewController;
-        PlayerDetailsViewController *playerDetailsViewController = [navigationController viewControllers][0];
-        playerDetailsViewController.delegate = self;
-    }
+    [self.delegate playerDetailsViewControllerDidSave:self];
+    NSLog(@"DidSave");
 }
 
 /*
