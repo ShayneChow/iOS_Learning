@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260634271A4BB09E00B835ED /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 260634261A4BB09E00B835ED /* PlayerCell.m */; };
 		264F34231A4AC108004FCC98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 264F34221A4AC108004FCC98 /* main.m */; };
 		264F34261A4AC108004FCC98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 264F34251A4AC108004FCC98 /* AppDelegate.m */; };
 		264F34291A4AC108004FCC98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 264F34281A4AC108004FCC98 /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260634251A4BB09E00B835ED /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
+		260634261A4BB09E00B835ED /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
 		264F341D1A4AC108004FCC98 /* StoryBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		264F34211A4AC108004FCC98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		264F34221A4AC108004FCC98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 			children = (
 				264F34241A4AC108004FCC98 /* AppDelegate.h */,
 				264F34251A4AC108004FCC98 /* AppDelegate.m */,
+				260634251A4BB09E00B835ED /* PlayerCell.h */,
+				260634261A4BB09E00B835ED /* PlayerCell.m */,
 				264F34271A4AC108004FCC98 /* ViewController.h */,
 				264F34281A4AC108004FCC98 /* ViewController.m */,
 				264F342A1A4AC108004FCC98 /* Main.storyboard */,
@@ -233,6 +238,7 @@
 				264F344B1A4AD33F004FCC98 /* PlayersViewController.m in Sources */,
 				264F34261A4AC108004FCC98 /* AppDelegate.m in Sources */,
 				264F34231A4AC108004FCC98 /* main.m in Sources */,
+				260634271A4BB09E00B835ED /* PlayerCell.m in Sources */,
 				264F344E1A4AD475004FCC98 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +430,7 @@
 				264F34421A4AC108004FCC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		264F34431A4AC108004FCC98 /* Build configuration list for PBXNativeTarget "StoryBoardDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +439,7 @@
 				264F34451A4AC108004FCC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
