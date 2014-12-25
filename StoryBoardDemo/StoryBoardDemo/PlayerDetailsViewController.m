@@ -7,12 +7,14 @@
 //
 
 #import "PlayerDetailsViewController.h"
+#import "Player.h"
 
 @interface PlayerDetailsViewController ()
 
 @end
 
 @implementation PlayerDetailsViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,12 +55,37 @@
 - (IBAction)cancel:(id)sender
 {
     [self.delegate playerDetailsViewControllerDidCancel:self];
-    NSLog(@"DidCancel");
+    NSLog(@"Did Cancel");
 }
 - (IBAction)done:(id)sender
 {
-    [self.delegate playerDetailsViewControllerDidSave:self];
-    NSLog(@"DidSave");
+    Player *player = [[Player alloc] init];
+    player.name = self.nameTextField.text;
+    player.game = @"Chess";
+    player.rating = 1;
+    [self.delegate playerDetailsViewController:self didAddPlayer:player];
+    NSLog(@"Did Save");
+}
+
+- (void)playerDetailsViewController:(PlayerDetailsViewController *)controller didAddPlayer:(Player *)player
+{
+//    [self.players addObject:player];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:([self.players count] - 1) inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if ((self = [super initWithCoder:aDecoder])) {
+        NSLog(@"init PlayerDetailsViewController");
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    NSLog(@"dealloc PlayerDetailsViewController");
 }
 
 /*
