@@ -21,7 +21,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UILabel *detailLabel;
-//@property (strong, nonatomic) NSArray *players;
 
 @property (nonatomic, weak) id <PlayerDetailsViewControllerDelegate> delegate;
 
