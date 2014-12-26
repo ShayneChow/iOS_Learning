@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "GamePickerViewController.h"
+#import "Player.h"
 
-@class Player,PlayerDetailsViewController;
+@class PlayerDetailsViewController;
 
 @protocol PlayerDetailsViewControllerDelegate <NSObject>
 - (void)playerDetailsViewControllerDidCancel:(PlayerDetailsViewController *)controller;
@@ -20,7 +21,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UILabel *detailLabel;
-@property (strong, nonatomic) NSArray *players;
+//@property (strong, nonatomic) NSArray *players;
 
 @property (nonatomic, weak) id <PlayerDetailsViewControllerDelegate> delegate;
 
