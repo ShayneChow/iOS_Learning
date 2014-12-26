@@ -196,6 +196,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="TextField_DidEndOnExit:" destination="m0T-O0-WpA" eventType="editingDidEndOnExit" id="WRs-A5-RBF"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>

@@ -54,6 +54,12 @@
     NSLog(@"Did Save");
 }
 
+- (IBAction)TextField_DidEndOnExit:(id)sender {
+    // 隐藏键盘.
+    [sender resignFirstResponder];
+
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     if ((self = [super initWithCoder:aDecoder])) {
