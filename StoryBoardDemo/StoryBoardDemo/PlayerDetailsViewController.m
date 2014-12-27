@@ -56,8 +56,8 @@
 
 - (IBAction)TextField_DidEndOnExit:(id)sender {
     // 隐藏键盘.
-    [sender resignFirstResponder];
-
+//    [sender resignFirstResponder];
+    [self.view endEditing:YES];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
