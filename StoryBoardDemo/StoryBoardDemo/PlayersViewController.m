@@ -47,6 +47,8 @@
     cell.gameLabel.text = player.game;
     cell.ratingImageView.image = [self imageForRating:player.rating];
     
+    self.tableView.tableFooterView = [[UIView alloc] init];     //隐藏没有内容的cell
+    
     return cell;
 }
 

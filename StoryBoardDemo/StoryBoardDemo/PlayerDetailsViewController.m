@@ -22,7 +22,20 @@
     [super viewDidLoad];
     
     self.detailLabel.text = _game;
+    
 }
+
+//-(void)dismissKeyboard {
+//    NSArray *subviews = [self.view subviews];
+//    for (id objInput in subviews) {
+//        if ([objInput isKindOfClass:[UITextField class]]) {
+//            UITextField *theTextField = objInput;
+//            if ([objInput isFirstResponder]) {
+//                [theTextField resignFirstResponder];
+//            }
+//        }
+//    }
+//}//实现整个视图中所有TextField控件隐藏键盘功能
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
