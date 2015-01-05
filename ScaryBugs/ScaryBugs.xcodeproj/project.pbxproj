@@ -15,6 +15,8 @@
 		2697B4AA1A5A40ED00DFE8A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2697B4A91A5A40ED00DFE8A7 /* Images.xcassets */; };
 		2697B4AD1A5A40ED00DFE8A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2697B4AB1A5A40ED00DFE8A7 /* LaunchScreen.xib */; };
 		2697B4B91A5A40ED00DFE8A7 /* ScaryBugsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2697B4B81A5A40ED00DFE8A7 /* ScaryBugsTests.m */; };
+		2697B4C61A5A43C300DFE8A7 /* ScaryBugData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2697B4C51A5A43C300DFE8A7 /* ScaryBugData.m */; };
+		2697B4C91A5A740700DFE8A7 /* ScaryBugDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2697B4C81A5A740700DFE8A7 /* ScaryBugDoc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		2697B4B21A5A40ED00DFE8A7 /* ScaryBugsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScaryBugsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2697B4B71A5A40ED00DFE8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2697B4B81A5A40ED00DFE8A7 /* ScaryBugsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaryBugsTests.m; sourceTree = "<group>"; };
+		2697B4C41A5A43C300DFE8A7 /* ScaryBugData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaryBugData.h; sourceTree = "<group>"; };
+		2697B4C51A5A43C300DFE8A7 /* ScaryBugData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaryBugData.m; sourceTree = "<group>"; };
+		2697B4C71A5A740700DFE8A7 /* ScaryBugDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaryBugDoc.h; sourceTree = "<group>"; };
+		2697B4C81A5A740700DFE8A7 /* ScaryBugDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaryBugDoc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +90,8 @@
 		2697B4981A5A40ED00DFE8A7 /* ScaryBugs */ = {
 			isa = PBXGroup;
 			children = (
-				2697B49D1A5A40ED00DFE8A7 /* AppDelegate.h */,
-				2697B49E1A5A40ED00DFE8A7 /* AppDelegate.m */,
-				2697B4A01A5A40ED00DFE8A7 /* MasterViewController.h */,
-				2697B4A11A5A40ED00DFE8A7 /* MasterViewController.m */,
-				2697B4A31A5A40ED00DFE8A7 /* DetailViewController.h */,
-				2697B4A41A5A40ED00DFE8A7 /* DetailViewController.m */,
-				2697B4A61A5A40ED00DFE8A7 /* Main.storyboard */,
+				2697B4C31A5A433200DFE8A7 /* Model */,
+				2697B4C21A5A42A400DFE8A7 /* GUI */,
 				2697B4A91A5A40ED00DFE8A7 /* Images.xcassets */,
 				2697B4AB1A5A40ED00DFE8A7 /* LaunchScreen.xib */,
 				2697B4991A5A40ED00DFE8A7 /* Supporting Files */,
@@ -122,6 +123,31 @@
 				2697B4B71A5A40ED00DFE8A7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2697B4C21A5A42A400DFE8A7 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				2697B49D1A5A40ED00DFE8A7 /* AppDelegate.h */,
+				2697B49E1A5A40ED00DFE8A7 /* AppDelegate.m */,
+				2697B4A01A5A40ED00DFE8A7 /* MasterViewController.h */,
+				2697B4A11A5A40ED00DFE8A7 /* MasterViewController.m */,
+				2697B4A31A5A40ED00DFE8A7 /* DetailViewController.h */,
+				2697B4A41A5A40ED00DFE8A7 /* DetailViewController.m */,
+				2697B4A61A5A40ED00DFE8A7 /* Main.storyboard */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		2697B4C31A5A433200DFE8A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2697B4C41A5A43C300DFE8A7 /* ScaryBugData.h */,
+				2697B4C51A5A43C300DFE8A7 /* ScaryBugData.m */,
+				2697B4C71A5A740700DFE8A7 /* ScaryBugDoc.h */,
+				2697B4C81A5A740700DFE8A7 /* ScaryBugDoc.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,9 +250,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2697B4C61A5A43C300DFE8A7 /* ScaryBugData.m in Sources */,
 				2697B49F1A5A40ED00DFE8A7 /* AppDelegate.m in Sources */,
 				2697B4A21A5A40ED00DFE8A7 /* MasterViewController.m in Sources */,
 				2697B49C1A5A40ED00DFE8A7 /* main.m in Sources */,
+				2697B4C91A5A740700DFE8A7 /* ScaryBugDoc.m in Sources */,
 				2697B4A51A5A40ED00DFE8A7 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
