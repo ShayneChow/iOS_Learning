@@ -31,6 +31,13 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    // Toolbar默认是隐藏的
+    [self.navigationController setToolbarHidden:NO animated:YES];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -38,7 +45,13 @@
 
 #pragma mark - Target Action
 - (void)hiddenOrShow{
-
+    if (self.navigationController.toolbarHidden) {
+        [self.navigationController setToolbarHidden:NO animated:YES];
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+    }else{
+        [self.navigationController setToolbarHidden:YES animated:YES];
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
 }
 
 @end
