@@ -1,29 +1,28 @@
 //
-//  RootViewController.m
+//  SecondViewController.m
 //  5.1NavigationController
 //
 //  Created by choushayne on 15/1/5.
 //  Copyright (c) 2015年 ShayneChow. All rights reserved.
 //
 
-#import "RootViewController.h"
 #import "SecondViewController.h"
 
-@interface RootViewController ()
+@interface SecondViewController ()
 
 @end
 
-@implementation RootViewController
+@implementation SecondViewController
 
 - (void)loadView{
     UIView *baseView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
-    baseView.backgroundColor = [UIColor purpleColor];
+    baseView.backgroundColor = [UIColor orangeColor];
     self.view = baseView;
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [button setTitle:@"Push" forState:UIControlStateNormal];
-    [button setFrame:CGRectMake(90, 100, 140, 40)];
-    [button addTarget:self action:@selector(pushVC) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"isHidden" forState:UIControlStateNormal];
+    [button setFrame:CGRectMake(90, 150, 140, 35)];
+    [button addTarget:self action:@selector(hiddenOrShow) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 }
 
@@ -38,9 +37,8 @@
 }
 
 #pragma mark - Target Action
-- (void)pushVC{
-    SecondViewController *secondVC = [[SecondViewController alloc] init];
-    [self.navigationController pushViewController:secondVC animated:YES];
+- (void)hiddenOrShow{
+
 }
 
 @end
