@@ -16,6 +16,7 @@
 		2697B4F31A5A901100DFE8A7 /* __1NavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2697B4F21A5A901100DFE8A7 /* __1NavigationControllerTests.m */; };
 		2697B4FE1A5A916500DFE8A7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2697B4FD1A5A916500DFE8A7 /* RootViewController.m */; };
 		2697B5011A5A95F900DFE8A7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2697B5001A5A95F900DFE8A7 /* SecondViewController.m */; };
+		2697B5041A5A9FE800DFE8A7 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2697B5031A5A9FE800DFE8A7 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		2697B4FD1A5A916500DFE8A7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		2697B4FF1A5A95F900DFE8A7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		2697B5001A5A95F900DFE8A7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		2697B5021A5A9FE800DFE8A7 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		2697B5031A5A9FE800DFE8A7 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				2697B4FD1A5A916500DFE8A7 /* RootViewController.m */,
 				2697B4FF1A5A95F900DFE8A7 /* SecondViewController.h */,
 				2697B5001A5A95F900DFE8A7 /* SecondViewController.m */,
+				2697B5021A5A9FE800DFE8A7 /* ThirdViewController.h */,
+				2697B5031A5A9FE800DFE8A7 /* ThirdViewController.m */,
 				2697B4DD1A5A901100DFE8A7 /* ViewController.h */,
 				2697B4DE1A5A901100DFE8A7 /* ViewController.m */,
 				2697B4E01A5A901100DFE8A7 /* Main.storyboard */,
@@ -231,6 +236,7 @@
 			files = (
 				2697B5011A5A95F900DFE8A7 /* SecondViewController.m in Sources */,
 				2697B4DF1A5A901100DFE8A7 /* ViewController.m in Sources */,
+				2697B5041A5A9FE800DFE8A7 /* ThirdViewController.m in Sources */,
 				2697B4DC1A5A901100DFE8A7 /* AppDelegate.m in Sources */,
 				2697B4FE1A5A916500DFE8A7 /* RootViewController.m in Sources */,
 				2697B4D91A5A901100DFE8A7 /* main.m in Sources */,

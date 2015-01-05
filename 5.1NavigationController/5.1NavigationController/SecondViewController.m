@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "ThirdViewController.h"
 
 @interface SecondViewController ()
 
@@ -24,6 +25,12 @@
     [button setFrame:CGRectMake(90, 150, 140, 35)];
     [button addTarget:self action:@selector(hiddenOrShow) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    
+    UIButton *push = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [push setTitle:@"push" forState:UIControlStateNormal];
+    [push setFrame:CGRectMake(90, 240, 140, 35)];
+    [push addTarget:self action:@selector(pushVC) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:push];
 }
 
 - (void)viewDidLoad {
@@ -52,6 +59,11 @@
         [self.navigationController setToolbarHidden:YES animated:YES];
         [self.navigationController setNavigationBarHidden:YES animated:YES];
     }
+}
+
+- (void)pushVC{
+    ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
+    [self.navigationController pushViewController:thirdVC animated:YES];
 }
 
 @end
