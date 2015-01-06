@@ -14,6 +14,11 @@
 		26314BBF1A5BF133009E6F0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26314BBE1A5BF133009E6F0A /* Images.xcassets */; };
 		26314BC21A5BF133009E6F0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26314BC01A5BF133009E6F0A /* LaunchScreen.xib */; };
 		26314BCE1A5BF133009E6F0A /* __1UITabBarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26314BCD1A5BF133009E6F0A /* __1UITabBarControllerTests.m */; };
+		26314BD91A5BFAD1009E6F0A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26314BD81A5BFAD1009E6F0A /* HomeViewController.m */; };
+		26314BDC1A5BFAEC009E6F0A /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26314BDB1A5BFAEC009E6F0A /* NewsViewController.m */; };
+		26314BDF1A5BFB0B009E6F0A /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26314BDE1A5BFB0B009E6F0A /* HistoryViewController.m */; };
+		26314BE21A5BFB1D009E6F0A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26314BE11A5BFB1D009E6F0A /* SearchViewController.m */; };
+		26314BE51A5BFB30009E6F0A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26314BE41A5BFB30009E6F0A /* SettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		26314BC71A5BF133009E6F0A /* 6.1UITabBarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6.1UITabBarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26314BCC1A5BF133009E6F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26314BCD1A5BF133009E6F0A /* __1UITabBarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __1UITabBarControllerTests.m; sourceTree = "<group>"; };
+		26314BD71A5BFAD1009E6F0A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		26314BD81A5BFAD1009E6F0A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		26314BDA1A5BFAEC009E6F0A /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		26314BDB1A5BFAEC009E6F0A /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		26314BDD1A5BFB0B009E6F0A /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		26314BDE1A5BFB0B009E6F0A /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		26314BE01A5BFB1D009E6F0A /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		26314BE11A5BFB1D009E6F0A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		26314BE31A5BFB30009E6F0A /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		26314BE41A5BFB30009E6F0A /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +98,16 @@
 			children = (
 				26314BB51A5BF133009E6F0A /* AppDelegate.h */,
 				26314BB61A5BF133009E6F0A /* AppDelegate.m */,
+				26314BD71A5BFAD1009E6F0A /* HomeViewController.h */,
+				26314BD81A5BFAD1009E6F0A /* HomeViewController.m */,
+				26314BDA1A5BFAEC009E6F0A /* NewsViewController.h */,
+				26314BDB1A5BFAEC009E6F0A /* NewsViewController.m */,
+				26314BDD1A5BFB0B009E6F0A /* HistoryViewController.h */,
+				26314BDE1A5BFB0B009E6F0A /* HistoryViewController.m */,
+				26314BE01A5BFB1D009E6F0A /* SearchViewController.h */,
+				26314BE11A5BFB1D009E6F0A /* SearchViewController.m */,
+				26314BE31A5BFB30009E6F0A /* SettingViewController.h */,
+				26314BE41A5BFB30009E6F0A /* SettingViewController.m */,
 				26314BB81A5BF133009E6F0A /* ViewController.h */,
 				26314BB91A5BF133009E6F0A /* ViewController.m */,
 				26314BBB1A5BF133009E6F0A /* Main.storyboard */,
@@ -221,7 +246,12 @@
 			files = (
 				26314BBA1A5BF133009E6F0A /* ViewController.m in Sources */,
 				26314BB71A5BF133009E6F0A /* AppDelegate.m in Sources */,
+				26314BDC1A5BFAEC009E6F0A /* NewsViewController.m in Sources */,
 				26314BB41A5BF133009E6F0A /* main.m in Sources */,
+				26314BD91A5BFAD1009E6F0A /* HomeViewController.m in Sources */,
+				26314BDF1A5BFB0B009E6F0A /* HistoryViewController.m in Sources */,
+				26314BE21A5BFB1D009E6F0A /* SearchViewController.m in Sources */,
+				26314BE51A5BFB30009E6F0A /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
