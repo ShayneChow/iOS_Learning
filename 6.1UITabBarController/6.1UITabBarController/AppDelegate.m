@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "NewsViewController.h"
+#import "HistoryViewController.h"
+#import "SearchViewController.h"
+#import "SettingViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,25 +33,25 @@
      * 5.添加到window的rootViewController中
      */
     
-    UIViewController *vc1 = [[UIViewController alloc] init];
-    vc1.title = @"首页";
-    vc1.view.backgroundColor = [UIColor redColor];
+    HomeViewController *vc1 = [[HomeViewController alloc] init];
+//    vc1.title = @"首页";
+//    vc1.view.backgroundColor = [UIColor redColor];
     
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    vc2.title = @"新闻";
-    vc2.view.backgroundColor = [UIColor blueColor];
+    NewsViewController *vc2 = [[NewsViewController alloc] init];
+//    vc2.title = @"新闻";
+//    vc2.view.backgroundColor = [UIColor blueColor];
     
-    UIViewController *vc3 = [[UIViewController alloc] init];
-    vc3.title = @"历史";
-    vc3.view.backgroundColor = [UIColor purpleColor];
+    HistoryViewController *vc3 = [[HistoryViewController alloc] init];
+//    vc3.title = @"历史";
+//    vc3.view.backgroundColor = [UIColor purpleColor];
     
-    UIViewController *vc4 = [[UIViewController alloc] init];
-    vc4.title = @"搜索";
-    vc4.view.backgroundColor = [UIColor orangeColor];
+    SearchViewController *vc4 = [[SearchViewController alloc] init];
+//    vc4.title = @"搜索";
+//    vc4.view.backgroundColor = [UIColor orangeColor];
     
-    UIViewController *vc5 = [[UIViewController alloc] init];
-    vc5.title = @"设置";
-    vc5.view.backgroundColor = [UIColor grayColor];
+    SettingViewController *vc5 = [[SettingViewController alloc] init];
+//    vc5.title = @"设置";
+//    vc5.view.backgroundColor = [UIColor grayColor];
     
     NSArray *viewControllers = @[vc1, vc2, vc3, vc4, vc5];
     
