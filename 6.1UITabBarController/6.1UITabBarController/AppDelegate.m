@@ -16,7 +16,45 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    /*
+     * 1.创建若干个子视图控制器（它们是并列的关系）
+     * 2.创建一个数组，将已创建的子视图控制器，添加到数组中
+     * 3.创建UITabBarController实例
+     * 4.tabBarController.viewControllers = viewControllers;
+     * 5.添加到window的rootViewController中
+     */
+    
+    UIViewController *vc1 = [[UIViewController alloc] init];
+    vc1.title = @"首页";
+    vc1.view.backgroundColor = [UIColor redColor];
+    
+    UIViewController *vc2 = [[UIViewController alloc] init];
+    vc2.title = @"新闻";
+    vc2.view.backgroundColor = [UIColor blueColor];
+    
+    UIViewController *vc3 = [[UIViewController alloc] init];
+    vc3.title = @"历史";
+    vc3.view.backgroundColor = [UIColor purpleColor];
+    
+    UIViewController *vc4 = [[UIViewController alloc] init];
+    vc4.title = @"搜索";
+    vc4.view.backgroundColor = [UIColor orangeColor];
+    
+    UIViewController *vc5 = [[UIViewController alloc] init];
+    vc5.title = @"设置";
+    vc5.view.backgroundColor = [UIColor grayColor];
+    
+    NSArray *viewControllers = @[vc1, vc2, vc3, vc4, vc5];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    [tabBarController setViewControllers:viewControllers animated:YES];
+    
+    self.window.rootViewController = tabBarController;
+    
     return YES;
 }
 
