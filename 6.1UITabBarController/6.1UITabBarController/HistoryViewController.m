@@ -22,6 +22,12 @@
     return self;
 }
 
+- (void)loadView{
+    UIView *view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+    view.backgroundColor = [UIColor purpleColor];
+    self.view = view;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
