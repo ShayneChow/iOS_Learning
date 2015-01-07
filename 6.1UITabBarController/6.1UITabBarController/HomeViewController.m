@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "HistoryViewController.h"
 
 @interface HomeViewController ()
 
@@ -32,12 +33,22 @@
     [super viewDidLoad];
     
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:nil];
+    UIBarButtonItem *pushItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(push)];
     self.navigationItem.leftBarButtonItem = leftItem;
+    self.navigationItem.rightBarButtonItem = pushItem;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)push{
+    NSLog(@"UIBarButtonSystemItemAdd Action");
+    
+    HistoryViewController *vc3 = [[HistoryViewController alloc] init];
+    [self.navigationController pushViewController:vc3 animated:YES];
 }
 
 /*
