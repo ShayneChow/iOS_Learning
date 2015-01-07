@@ -34,26 +34,16 @@
      */
     
     HomeViewController *vc1 = [[HomeViewController alloc] init];
-//    vc1.title = @"首页";
-//    vc1.view.backgroundColor = [UIColor redColor];
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:vc1];
+    UITabBarItem *homeItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[UIImage imageNamed:@""] tag:1];
+    vc1.tabBarItem = homeItem;
     
     NewsViewController *vc2 = [[NewsViewController alloc] init];
-//    vc2.title = @"新闻";
-//    vc2.view.backgroundColor = [UIColor blueColor];
-    
     HistoryViewController *vc3 = [[HistoryViewController alloc] init];
-//    vc3.title = @"历史";
-//    vc3.view.backgroundColor = [UIColor purpleColor];
-    
     SearchViewController *vc4 = [[SearchViewController alloc] init];
-//    vc4.title = @"搜索";
-//    vc4.view.backgroundColor = [UIColor orangeColor];
-    
     SettingViewController *vc5 = [[SettingViewController alloc] init];
-//    vc5.title = @"设置";
-//    vc5.view.backgroundColor = [UIColor grayColor];
     
-    NSArray *viewControllers = @[vc1, vc2, vc3, vc4, vc5];
+    NSArray *viewControllers = @[homeNav, vc2, vc3, vc4, vc5];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     [tabBarController setViewControllers:viewControllers animated:YES];
