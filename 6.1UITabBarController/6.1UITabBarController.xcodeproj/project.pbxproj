@@ -19,6 +19,7 @@
 		26314BDF1A5BFB0B009E6F0A /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26314BDE1A5BFB0B009E6F0A /* HistoryViewController.m */; };
 		26314BE21A5BFB1D009E6F0A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26314BE11A5BFB1D009E6F0A /* SearchViewController.m */; };
 		26314BE51A5BFB30009E6F0A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26314BE41A5BFB30009E6F0A /* SettingViewController.m */; };
+		26480DBC1A5CE1B10005CC77 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26480DBB1A5CE1B10005CC77 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		26314BE11A5BFB1D009E6F0A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		26314BE31A5BFB30009E6F0A /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		26314BE41A5BFB30009E6F0A /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		26480DBA1A5CE1B10005CC77 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		26480DBB1A5CE1B10005CC77 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 			children = (
 				26314BB51A5BF133009E6F0A /* AppDelegate.h */,
 				26314BB61A5BF133009E6F0A /* AppDelegate.m */,
+				26480DBA1A5CE1B10005CC77 /* MainViewController.h */,
+				26480DBB1A5CE1B10005CC77 /* MainViewController.m */,
 				26314BD71A5BFAD1009E6F0A /* HomeViewController.h */,
 				26314BD81A5BFAD1009E6F0A /* HomeViewController.m */,
 				26314BDA1A5BFAEC009E6F0A /* NewsViewController.h */,
@@ -248,6 +253,7 @@
 				26314BB71A5BF133009E6F0A /* AppDelegate.m in Sources */,
 				26314BDC1A5BFAEC009E6F0A /* NewsViewController.m in Sources */,
 				26314BB41A5BF133009E6F0A /* main.m in Sources */,
+				26480DBC1A5CE1B10005CC77 /* MainViewController.m in Sources */,
 				26314BD91A5BFAD1009E6F0A /* HomeViewController.m in Sources */,
 				26314BDF1A5BFB0B009E6F0A /* HistoryViewController.m in Sources */,
 				26314BE21A5BFB1D009E6F0A /* SearchViewController.m in Sources */,
@@ -442,6 +448,7 @@
 				26314BD31A5BF133009E6F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26314BD41A5BF133009E6F0A /* Build configuration list for PBXNativeTarget "6.1UITabBarControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +457,7 @@
 				26314BD61A5BF133009E6F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
