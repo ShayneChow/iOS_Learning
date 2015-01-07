@@ -15,13 +15,30 @@
 
 @interface MainViewController ()
 
+- (void)loadviewControllers;
+- (void)loadcustomTabBar;
+
 @end
 
 @implementation MainViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.tabBar.hidden = YES;
+    }
+    return self;
+}// 初始化方法
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self loadviewControllers];
+    [self loadcustomTabBar];
+    
+}
+
+- (void)loadviewControllers{
     HomeViewController *vc1 = [[HomeViewController alloc] init];
     UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:vc1];
     UITabBarItem *homeItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[UIImage imageNamed:@""] tag:1];
@@ -38,9 +55,42 @@
     
     NSArray *viewControllers = @[homeNav, newsNav, vc3, vc4, vc5];
     
-//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    //    UITabBarController *tabBarController = [[UITabBarController alloc] init];
     [self setViewControllers:viewControllers animated:YES];
+}
+
+- (void)loadcustomTabBar{
+    // 初始化自定义TabBar背景
+    UIImageView *tabBarBG = [[UIImageView alloc] initWithFrame:CGRectMake(0, 431, 320, 49)]; // 此处可以使用宏定义来定义屏幕高度来适配不同高度的iPhone
+    tabBarBG.userInteractionEnabled = YES;
+    tabBarBG.image = [UIImage imageNamed:@"tab_bg_all"];
+    [self.view addSubview:tabBarBG];
     
+    // 初始化自定义选中背景
+    _selectView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 49.0/2-45.0/2, 53, 45)];
+    _selectView.image = [UIImage imageNamed:@"selectTabbar"];
+    [tabBarBG addSubview:_selectView];
+    
+    // 初始化自定义TabBarItem
+    float coordinateX = 0;
+    for (int index = 0; index < 5; index++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        button.tag = index;
+        button.frame = CGRectMake(14+coordinateX, 49.0/2-20, 42, 40);
+        NSString *imageName = [[NSString alloc] initWithFormat:@"%d", index+1];
+        [button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+        [tabBarBG addSubview:button];
+        [button addTarget:self action:@selector(changeViewController:) forControlEvents:UIControlEventTouchUpInside];
+        coordinateX += 62;
+    }
+}
+
+- (void)changeViewController:(UIButton *)button{
+    self.selectedIndex = button.tag;// 切换视图
+    
+    [UIView beginAnimations:nil context:nil]; //切换动画
+    _selectView.frame = CGRectMake(10 + button.tag*62, 49.0/2 - 45.0/2, 53, 45); // 选中背景切换
+    [UIView commitAnimations];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -20,6 +20,13 @@
 		26314BE21A5BFB1D009E6F0A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26314BE11A5BFB1D009E6F0A /* SearchViewController.m */; };
 		26314BE51A5BFB30009E6F0A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26314BE41A5BFB30009E6F0A /* SettingViewController.m */; };
 		26480DBC1A5CE1B10005CC77 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26480DBB1A5CE1B10005CC77 /* MainViewController.m */; };
+		26480DC01A5D41F40005CC77 /* selectTabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26480DBE1A5D41F40005CC77 /* selectTabbar@2x.png */; };
+		26480DC11A5D41F40005CC77 /* tab_bg_all@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26480DBF1A5D41F40005CC77 /* tab_bg_all@2x.png */; };
+		26480DC71A5D4DFD0005CC77 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26480DC21A5D4DFD0005CC77 /* 3@2x.png */; };
+		26480DC81A5D4DFD0005CC77 /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26480DC31A5D4DFD0005CC77 /* 2@2x.png */; };
+		26480DC91A5D4DFD0005CC77 /* 5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26480DC41A5D4DFD0005CC77 /* 5@2x.png */; };
+		26480DCA1A5D4DFD0005CC77 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26480DC51A5D4DFD0005CC77 /* 1@2x.png */; };
+		26480DCB1A5D4DFD0005CC77 /* 4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26480DC61A5D4DFD0005CC77 /* 4@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,13 @@
 		26314BE41A5BFB30009E6F0A /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		26480DBA1A5CE1B10005CC77 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		26480DBB1A5CE1B10005CC77 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		26480DBE1A5D41F40005CC77 /* selectTabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selectTabbar@2x.png"; sourceTree = "<group>"; };
+		26480DBF1A5D41F40005CC77 /* tab_bg_all@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bg_all@2x.png"; sourceTree = "<group>"; };
+		26480DC21A5D4DFD0005CC77 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3@2x.png"; sourceTree = "<group>"; };
+		26480DC31A5D4DFD0005CC77 /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2@2x.png"; sourceTree = "<group>"; };
+		26480DC41A5D4DFD0005CC77 /* 5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5@2x.png"; sourceTree = "<group>"; };
+		26480DC51A5D4DFD0005CC77 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
+		26480DC61A5D4DFD0005CC77 /* 4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,7 @@
 		26314BB01A5BF133009E6F0A /* 6.1UITabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				26480DBD1A5D415C0005CC77 /* Image */,
 				26314BB51A5BF133009E6F0A /* AppDelegate.h */,
 				26314BB61A5BF133009E6F0A /* AppDelegate.m */,
 				26480DBA1A5CE1B10005CC77 /* MainViewController.h */,
@@ -147,6 +162,20 @@
 				26314BCC1A5BF133009E6F0A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26480DBD1A5D415C0005CC77 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				26480DC21A5D4DFD0005CC77 /* 3@2x.png */,
+				26480DC31A5D4DFD0005CC77 /* 2@2x.png */,
+				26480DC41A5D4DFD0005CC77 /* 5@2x.png */,
+				26480DC51A5D4DFD0005CC77 /* 1@2x.png */,
+				26480DC61A5D4DFD0005CC77 /* 4@2x.png */,
+				26480DBE1A5D41F40005CC77 /* selectTabbar@2x.png */,
+				26480DBF1A5D41F40005CC77 /* tab_bg_all@2x.png */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +258,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26480DC91A5D4DFD0005CC77 /* 5@2x.png in Resources */,
 				26314BBD1A5BF133009E6F0A /* Main.storyboard in Resources */,
+				26480DC71A5D4DFD0005CC77 /* 3@2x.png in Resources */,
+				26480DC01A5D41F40005CC77 /* selectTabbar@2x.png in Resources */,
 				26314BC21A5BF133009E6F0A /* LaunchScreen.xib in Resources */,
 				26314BBF1A5BF133009E6F0A /* Images.xcassets in Resources */,
+				26480DC81A5D4DFD0005CC77 /* 2@2x.png in Resources */,
+				26480DCA1A5D4DFD0005CC77 /* 1@2x.png in Resources */,
+				26480DC11A5D41F40005CC77 /* tab_bg_all@2x.png in Resources */,
+				26480DCB1A5D4DFD0005CC77 /* 4@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

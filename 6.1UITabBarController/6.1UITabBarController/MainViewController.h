@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UITabBarController
+@interface MainViewController : UITabBarController{
+@private
+    // 设置全局变量
+    UIImageView *_selectView;
+}
 
 @end
