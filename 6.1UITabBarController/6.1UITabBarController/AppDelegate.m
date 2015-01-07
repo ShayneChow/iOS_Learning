@@ -39,11 +39,15 @@
     vc1.tabBarItem = homeItem;
     
     NewsViewController *vc2 = [[NewsViewController alloc] init];
+    UINavigationController *newsNav = [[UINavigationController alloc] initWithRootViewController:vc2];
+    UITabBarItem *newsItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:2];
+    vc2.tabBarItem = newsItem;
+    
     HistoryViewController *vc3 = [[HistoryViewController alloc] init];
     SearchViewController *vc4 = [[SearchViewController alloc] init];
     SettingViewController *vc5 = [[SettingViewController alloc] init];
     
-    NSArray *viewControllers = @[homeNav, vc2, vc3, vc4, vc5];
+    NSArray *viewControllers = @[homeNav, newsNav, vc3, vc4, vc5];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     [tabBarController setViewControllers:viewControllers animated:YES];
