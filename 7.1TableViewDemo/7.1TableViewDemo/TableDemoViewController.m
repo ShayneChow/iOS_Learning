@@ -43,6 +43,7 @@
     }
     
     cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:@"icon"];
     return cell;
 }
 

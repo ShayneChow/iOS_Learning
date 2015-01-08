@@ -14,6 +14,7 @@
 		26D4119D1A5E8C03007F2A2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D4119C1A5E8C03007F2A2F /* Images.xcassets */; };
 		26D411A01A5E8C03007F2A2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26D4119E1A5E8C03007F2A2F /* LaunchScreen.xib */; };
 		26D411AC1A5E8C03007F2A2F /* __1TableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D411AB1A5E8C03007F2A2F /* __1TableViewDemoTests.m */; };
+		26D411B61A5E93FE007F2A2F /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D411B51A5E93FE007F2A2F /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		26D411A51A5E8C03007F2A2F /* 7.1TableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 7.1TableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D411AA1A5E8C03007F2A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26D411AB1A5E8C03007F2A2F /* __1TableViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __1TableViewDemoTests.m; sourceTree = "<group>"; };
+		26D411B51A5E93FE007F2A2F /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		26D4118E1A5E8C03007F2A2F /* 7.1TableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				26D411B51A5E93FE007F2A2F /* icon@2x.png */,
 				26D411931A5E8C03007F2A2F /* AppDelegate.h */,
 				26D411941A5E8C03007F2A2F /* AppDelegate.m */,
 				26D411961A5E8C03007F2A2F /* TableDemoViewController.h */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26D4119B1A5E8C03007F2A2F /* Main.storyboard in Resources */,
+				26D411B61A5E93FE007F2A2F /* icon@2x.png in Resources */,
 				26D411A01A5E8C03007F2A2F /* LaunchScreen.xib in Resources */,
 				26D4119D1A5E8C03007F2A2F /* Images.xcassets in Resources */,
 			);
