@@ -44,6 +44,11 @@
     
     cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
     cell.imageView.image = [UIImage imageNamed:@"icon"];
+    
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]
+                                               initWithTarget:self action:@selector(longPressGestureRecognized:)];
+    [self.view addGestureRecognizer:longPress];
+    
     return cell;
 }
 
