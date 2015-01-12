@@ -115,4 +115,15 @@
     ContactGroup *group=_contacts[section];
     return group.detail;
 }
+
+#pragma mark 返回每组标题索引
+-(NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
+    NSLog(@"生成组索引");
+    NSMutableArray *indexs=[[NSMutableArray alloc]init];
+    for(ContactGroup *group in _contacts){
+        [indexs addObject:group.name];
+    }
+    return indexs;
+}
+
 @end
