@@ -15,6 +15,7 @@
 		26E002F81A6415B200FA17FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E002F61A6415B200FA17FD /* LaunchScreen.xib */; };
 		26E003041A6415B200FA17FD /* ContactDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E003031A6415B200FA17FD /* ContactDemoTests.m */; };
 		26E0030F1A64175600FA17FD /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E0030E1A64175600FA17FD /* Contact.m */; };
+		26E003121A6417F100FA17FD /* ContactGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E003111A6417F100FA17FD /* ContactGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		26E003031A6415B200FA17FD /* ContactDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDemoTests.m; sourceTree = "<group>"; };
 		26E0030D1A64175600FA17FD /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = ../Contact.h; sourceTree = "<group>"; };
 		26E0030E1A64175600FA17FD /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = ../Contact.m; sourceTree = "<group>"; };
+		26E003101A6417F100FA17FD /* ContactGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactGroup.h; sourceTree = "<group>"; };
+		26E003111A6417F100FA17FD /* ContactGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactGroup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 			children = (
 				26E0030D1A64175600FA17FD /* Contact.h */,
 				26E0030E1A64175600FA17FD /* Contact.m */,
+				26E003101A6417F100FA17FD /* ContactGroup.h */,
+				26E003111A6417F100FA17FD /* ContactGroup.m */,
 				26E002EB1A6415B200FA17FD /* AppDelegate.h */,
 				26E002EC1A6415B200FA17FD /* AppDelegate.m */,
 				26E002EE1A6415B200FA17FD /* ViewController.h */,
@@ -228,6 +233,7 @@
 				26E002F01A6415B200FA17FD /* ViewController.m in Sources */,
 				26E002ED1A6415B200FA17FD /* AppDelegate.m in Sources */,
 				26E002EA1A6415B200FA17FD /* main.m in Sources */,
+				26E003121A6417F100FA17FD /* ContactGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
