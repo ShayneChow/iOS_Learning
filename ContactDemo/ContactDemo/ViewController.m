@@ -13,6 +13,7 @@
 @interface ViewController ()<UITableViewDataSource>{
     UITableView *_tableView;
     NSMutableArray *_contacts;//联系人模型
+    NSIndexPath *_selectedIndexPath;//当前选中的组和行
 }
 
 @end
@@ -143,6 +144,38 @@
 #pragma mark 设置尾部说明内容高度
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 40;
+}
+
+#pragma mark 点击行
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    _selectedIndexPath=indexPath;
+    ContactGroup *group=_contacts[indexPath.section];
+    Contact *contact=group.contacts[indexPath.row];
+    //创建弹出窗口
+    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"System Info" message:[contact getName] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    alert.alertViewStyle=UIAlertViewStylePlainTextInput; //设置窗口内容样式
+    UITextField *textField= [alert textFieldAtIndex:0]; //取得文本框
+    textField.text=contact.phoneNumber; //设置文本框内容
+    [alert show]; //显示窗口
+}
+
+#pragma mark 窗口的代理方法，用户保存数据
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    //当点击了第二个按钮（OK）
+    if (buttonIndex==1) {
+        UITextField *textField= [alertView textFieldAtIndex:0];
+        //修改模型数据
+        ContactGroup *group=_contacts[_selectedIndexPath.section];
+        Contact *contact=group.contacts[_selectedIndexPath.row];
+        contact.phoneNumber=textField.text;
+        //刷新表格
+        [_tableView reloadData];
+    }
+}
+
+#pragma mark 重写状态样式方法
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 @end
