@@ -10,7 +10,7 @@
 #import "Contact.h"
 #import "ContactGroup.h"
 
-@interface ViewController ()<UITableViewDataSource>{
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>{
     UITableView *_tableView;
     NSMutableArray *_contacts;//联系人模型
     NSIndexPath *_selectedIndexPath;//当前选中的组和行
@@ -29,7 +29,9 @@
     _tableView=[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
-    _tableView.dataSource=self;
+    _tableView.dataSource = self;
+    //设置代理
+    _tableView.delegate = self;
     
     [self.view addSubview:_tableView];
 }
