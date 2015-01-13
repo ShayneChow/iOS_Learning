@@ -99,7 +99,17 @@
     NSLog(@"生成单元格(组：%li,行%li)",(long)indexPath.section,(long)indexPath.row);
     ContactGroup *group=_contacts[indexPath.section];
     Contact *contact=group.contacts[indexPath.row];
-    UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
+    
+//    UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
+    //由于此方法调用十分频繁，cell的标示声明成静态变量有利于性能优化
+    static NSString *cellIdentifier=@"UITableViewCellIdentifierKey1";
+    //首先根据标识去缓存池取
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    //如果缓存池没有到则重新创建并放到缓存池中
+    if(!cell){
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
+    }
+    NSLog(@"cell:%@",cell);
     cell.textLabel.text=[contact getName];
     cell.detailTextLabel.text=contact.phoneNumber;
     return cell;
