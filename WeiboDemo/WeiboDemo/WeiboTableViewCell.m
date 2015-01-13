@@ -76,11 +76,11 @@
 }
 
 #pragma mark 设置微博
--(void)setStatus:(Weibo *)weibo{
+-(void)setWeibo:(Weibo *)weibo{
     //设置头像大小和位置
     CGFloat avatarX=10,avatarY=10;
     CGRect avatarRect=CGRectMake(avatarX, avatarY, WeiboTableViewCellAvatarWidth, WeiboTableViewCellAvatarHeight);
-    _avatar.image=[UIImage imageNamed:weibo.imageURL];
+    _avatar.image=[UIImage imageNamed:weibo.iconURL];
     _avatar.frame=avatarRect;
     
     

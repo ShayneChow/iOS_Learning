@@ -14,7 +14,7 @@
 -(Weibo *)initWithDictionary:(NSDictionary *)dic{
     if(self=[super init]){
         self.Id=[dic[@"Id"] longLongValue];
-        self.imageURL=dic[@"imageURL"];
+        self.iconURL=dic[@"iconURL"];
         self.userName=dic[@"userName"];
         self.mbtype=dic[@"mbtype"];
         self.createdAt=dic[@"createdAt"];
@@ -25,9 +25,9 @@
 }
 
 #pragma mark 初始化微博对象（静态方法）
-+(Weibo *)statusWithDictionary:(NSDictionary *)dic{
-    Weibo *status=[[Weibo alloc]initWithDictionary:dic];
-    return status;
++(Weibo *)weiboWithDictionary:(NSDictionary *)dic{
+    Weibo *weibo = [[Weibo alloc]initWithDictionary:dic];
+    return weibo;
 }
 
 -(NSString *)source{

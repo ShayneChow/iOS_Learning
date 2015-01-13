@@ -12,7 +12,7 @@
 
 #pragma mark - 属性
 @property (nonatomic,assign) long long Id;//微博id
-@property (nonatomic,copy) NSString *imageURL;//头像
+@property (nonatomic,copy) NSString *iconURL;//头像
 @property (nonatomic,copy) NSString *userName;//发送用户
 @property (nonatomic,assign) NSString *mbtype;//会员类型
 @property (nonatomic,copy) NSString *createdAt;//创建时间
@@ -24,6 +24,6 @@
 -(Weibo *)initWithDictionary:(NSDictionary *)dic;
 
 #pragma mark 初始化微博对象（静态方法）
-+(Weibo *)statusWithDictionary:(NSDictionary *)dic;
++(Weibo *)weiboWithDictionary:(NSDictionary *)dic;
 
 @end

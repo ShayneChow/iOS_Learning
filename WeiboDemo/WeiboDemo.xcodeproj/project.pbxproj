@@ -14,7 +14,6 @@
 		2606D3291A65247F00943871 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2606D3281A65247F00943871 /* Images.xcassets */; };
 		2606D32C1A65247F00943871 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2606D32A1A65247F00943871 /* LaunchScreen.xib */; };
 		2606D3381A65247F00943871 /* WeiboDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2606D3371A65247F00943871 /* WeiboDemoTests.m */; };
-		2606D3421A652F7100943871 /* WeiboInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2606D3411A652F7100943871 /* WeiboInfo.plist */; };
 		2606D34B1A6538AD00943871 /* icon-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2606D3441A6538AD00943871 /* icon-01.png */; };
 		2606D34C1A6538AD00943871 /* icon-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2606D3451A6538AD00943871 /* icon-02.png */; };
 		2606D34D1A6538AD00943871 /* icon-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 2606D3461A6538AD00943871 /* icon-03.png */; };
@@ -24,6 +23,7 @@
 		2606D3511A6538AD00943871 /* mbtype.png in Resources */ = {isa = PBXBuildFile; fileRef = 2606D34A1A6538AD00943871 /* mbtype.png */; };
 		2606D3541A65390000943871 /* Weibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2606D3531A65390000943871 /* Weibo.m */; };
 		2606D3571A653A4A00943871 /* WeiboTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2606D3561A653A4A00943871 /* WeiboTableViewCell.m */; };
+		2606D3591A6541D600943871 /* Weibo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2606D3581A6541D600943871 /* Weibo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,6 @@
 		2606D3311A65247F00943871 /* WeiboDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiboDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2606D3361A65247F00943871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2606D3371A65247F00943871 /* WeiboDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboDemoTests.m; sourceTree = "<group>"; };
-		2606D3411A652F7100943871 /* WeiboInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WeiboInfo.plist; sourceTree = "<group>"; };
 		2606D3441A6538AD00943871 /* icon-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-01.png"; sourceTree = "<group>"; };
 		2606D3451A6538AD00943871 /* icon-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-02.png"; sourceTree = "<group>"; };
 		2606D3461A6538AD00943871 /* icon-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-03.png"; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		2606D3531A65390000943871 /* Weibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weibo.m; sourceTree = "<group>"; };
 		2606D3551A653A4A00943871 /* WeiboTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboTableViewCell.h; sourceTree = "<group>"; };
 		2606D3561A653A4A00943871 /* WeiboTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboTableViewCell.m; sourceTree = "<group>"; };
+		2606D3581A6541D600943871 /* Weibo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Weibo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,7 @@
 				2606D3431A6538AD00943871 /* images */,
 				2606D31C1A65247F00943871 /* Info.plist */,
 				2606D31D1A65247F00943871 /* main.m */,
-				2606D3411A652F7100943871 /* WeiboInfo.plist */,
+				2606D3581A6541D600943871 /* Weibo.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -250,8 +250,8 @@
 				2606D34D1A6538AD00943871 /* icon-03.png in Resources */,
 				2606D3501A6538AD00943871 /* icon.png in Resources */,
 				2606D3291A65247F00943871 /* Images.xcassets in Resources */,
-				2606D3421A652F7100943871 /* WeiboInfo.plist in Resources */,
 				2606D34F1A6538AD00943871 /* icon-05.png in Resources */,
+				2606D3591A6541D600943871 /* Weibo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
