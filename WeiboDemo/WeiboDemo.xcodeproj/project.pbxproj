@@ -23,6 +23,7 @@
 		2606D3501A6538AD00943871 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2606D3491A6538AD00943871 /* icon.png */; };
 		2606D3511A6538AD00943871 /* mbtype.png in Resources */ = {isa = PBXBuildFile; fileRef = 2606D34A1A6538AD00943871 /* mbtype.png */; };
 		2606D3541A65390000943871 /* Weibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2606D3531A65390000943871 /* Weibo.m */; };
+		2606D3571A653A4A00943871 /* WeiboTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2606D3561A653A4A00943871 /* WeiboTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		2606D34A1A6538AD00943871 /* mbtype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mbtype.png; sourceTree = "<group>"; };
 		2606D3521A65390000943871 /* Weibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weibo.h; sourceTree = "<group>"; };
 		2606D3531A65390000943871 /* Weibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weibo.m; sourceTree = "<group>"; };
+		2606D3551A653A4A00943871 /* WeiboTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboTableViewCell.h; sourceTree = "<group>"; };
+		2606D3561A653A4A00943871 /* WeiboTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				2606D3201A65247F00943871 /* AppDelegate.m */,
 				2606D3521A65390000943871 /* Weibo.h */,
 				2606D3531A65390000943871 /* Weibo.m */,
+				2606D3551A653A4A00943871 /* WeiboTableViewCell.h */,
+				2606D3561A653A4A00943871 /* WeiboTableViewCell.m */,
 				2606D3221A65247F00943871 /* ViewController.h */,
 				2606D3231A65247F00943871 /* ViewController.m */,
 				2606D3251A65247F00943871 /* Main.storyboard */,
@@ -268,6 +273,7 @@
 				2606D3241A65247F00943871 /* ViewController.m in Sources */,
 				2606D3211A65247F00943871 /* AppDelegate.m in Sources */,
 				2606D31E1A65247F00943871 /* main.m in Sources */,
+				2606D3571A653A4A00943871 /* WeiboTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
