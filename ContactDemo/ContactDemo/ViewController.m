@@ -108,6 +108,7 @@
     //如果缓存池没有到则重新创建并放到缓存池中
     if(!cell){
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;   // 跳转指示图标
     }
     NSLog(@"cell:%@",cell);
     cell.textLabel.text=[contact getName];
@@ -143,7 +144,7 @@
 #pragma mark 设置分组标题内容高度
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if(section==0){
-        return 50;
+        return 54;
     }
     return 40;
 }
@@ -155,7 +156,7 @@
 
 #pragma mark 设置尾部说明内容高度
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 40;
+    return 30;
 }
 
 #pragma mark 点击行
