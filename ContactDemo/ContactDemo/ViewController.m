@@ -99,7 +99,7 @@
     NSLog(@"生成单元格(组：%li,行%li)",(long)indexPath.section,(long)indexPath.row);
     ContactGroup *group=_contacts[indexPath.section];
     Contact *contact=group.contacts[indexPath.row];
-    UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
     cell.textLabel.text=[contact getName];
     cell.detailTextLabel.text=contact.phoneNumber;
     return cell;
@@ -171,7 +171,9 @@
         Contact *contact=group.contacts[_selectedIndexPath.row];
         contact.phoneNumber=textField.text;
         //刷新表格
-        [_tableView reloadData];
+        //[_tableView reloadData];  // 刷新整个TableView
+        NSArray *indexPaths=@[_selectedIndexPath];//需要局部刷新的单元格的组、行
+        [_tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];//后面的参数代表更新时的动画
     }
 }
 
