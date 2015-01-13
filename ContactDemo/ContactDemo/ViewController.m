@@ -126,4 +126,23 @@
     return indexs;
 }
 
+#pragma mark - 代理方法
+#pragma mark 设置分组标题内容高度
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if(section==0){
+        return 50;
+    }
+    return 40;
+}
+
+#pragma mark 设置每行高度（每行高度可以不一样）
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 45;
+}
+
+#pragma mark 设置尾部说明内容高度
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 40;
+}
+
 @end
