@@ -213,7 +213,21 @@
 }
 
 -(void)remove{
+    _isInsert = false;
     [_tableView setEditing:!_tableView.isEditing animated:true];
+}
+
+-(void)add{
+    _isInsert = true;
+    [_tableView setEditing:!_tableView.isEditing animated:true];
+}
+
+#pragma mark 取得当前操作状态，根据不同的状态左侧出现不同的操作按钮
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (_isInsert) {
+        return UITableViewCellEditingStyleInsert;
+    }
+    return UITableViewCellEditingStyleDelete;
 }
 
 #pragma mark 删除操作
@@ -233,11 +247,31 @@
             [_contacts removeObject:group];
             [tableView reloadData];
         }
+    }else if(editingStyle==UITableViewCellEditingStyleInsert){
+        Contact *newContact=[[Contact alloc]init];
+        newContact.firstName=@"first";
+        newContact.lastName=@"last";
+        newContact.phoneNumber=@"12345678901";
+        [group.contacts insertObject:newContact atIndex:indexPath.row];
+        [tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];//注意这里没有使用reladData刷新
     }
 }
 
--(void)add{
-
+#pragma mark 排序
+//只要实现这个方法在编辑状态右侧就有排序图标
+-(void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
+    ContactGroup *sourceGroup =_contacts[sourceIndexPath.section];
+    Contact *sourceContact=sourceGroup.contacts[sourceIndexPath.row];
+    ContactGroup *destinationGroup =_contacts[destinationIndexPath.section];
+    
+    [sourceGroup.contacts removeObject:sourceContact];
+    if(sourceGroup.contacts.count==0){
+        [_contacts removeObject:sourceGroup];
+        [tableView reloadData];
+    }
+    
+    [destinationGroup.contacts insertObject:sourceContact atIndex:destinationIndexPath.row];
+    
 }
 
 @end
