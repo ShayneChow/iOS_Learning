@@ -10,10 +10,14 @@
 #import "Contact.h"
 #import "ContactGroup.h"
 
+#define ContactToolbarHeight 44+17
+
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>{
     UITableView *_tableView;
     NSMutableArray *_contacts;//联系人模型
     NSIndexPath *_selectedIndexPath;//当前选中的组和行
+    UIToolbar *_toolbar;
+    BOOL _isInsert; // 记录点击插入还是删除按钮
 }
 
 @end
@@ -27,13 +31,17 @@
     
     //创建一个分组样式的UITableView
     _tableView=[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    _tableView.contentInset=UIEdgeInsetsMake(ContactToolbarHeight, 0, 0, 0);
+    [self.view addSubview:_tableView];
+
+    //添加工具栏
+    [self addToolbar];
     
     //设置数据源，注意必须实现对应的UITableViewDataSource协议
     _tableView.dataSource = self;
     //设置代理
     _tableView.delegate = self;
     
-    [self.view addSubview:_tableView];
 }
 
 #pragma mark 加载数据
@@ -143,9 +151,6 @@
 #pragma mark - 代理方法
 #pragma mark 设置分组标题内容高度
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if(section==0){
-        return 54;
-    }
     return 40;
 }
 
@@ -191,6 +196,48 @@
 #pragma mark 重写状态样式方法
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
+}
+
+#pragma mark 添加工具栏
+-(void)addToolbar{
+    CGRect barframe=self.view.frame;
+    NSLog(@"屏宽：%f", barframe.size.width);
+    _toolbar=[[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, barframe.size.width, ContactToolbarHeight)];
+    //    _toolbar.backgroundColor=[UIColor colorWithHue:246/255.0 saturation:246/255.0 brightness:246/255.0 alpha:1];
+    [self.view addSubview:_toolbar];
+    UIBarButtonItem *removeButton=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(remove)];
+    UIBarButtonItem *flexibleButton=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    UIBarButtonItem *addButton=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add)];
+    NSArray *buttonArray=[NSArray arrayWithObjects:removeButton,flexibleButton,addButton, nil];
+    _toolbar.items=buttonArray;
+}
+
+-(void)remove{
+    [_tableView setEditing:!_tableView.isEditing animated:true];
+}
+
+#pragma mark 删除操作
+//实现了此方法向左滑动就会显示删除按钮
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    ContactGroup *group =_contacts[indexPath.section];
+    Contact *contact=group.contacts[indexPath.row];
+    if (editingStyle==UITableViewCellEditingStyleDelete) {
+        [group.contacts removeObject:contact];
+        //考虑到性能这里不建议使用reloadData
+        //[tableView reloadData];
+        //使用下面的方法既可以局部刷新又有动画效果
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
+        
+        //如果当前组中没有数据则移除组刷新整个表格
+        if (group.contacts.count==0) {
+            [_contacts removeObject:group];
+            [tableView reloadData];
+        }
+    }
+}
+
+-(void)add{
+
 }
 
 @end
