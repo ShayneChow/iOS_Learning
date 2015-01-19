@@ -14,6 +14,7 @@
 		265867021A6CD59200D77087 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265867011A6CD59200D77087 /* Images.xcassets */; };
 		265867051A6CD59200D77087 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265867031A6CD59200D77087 /* LaunchScreen.xib */; };
 		265867111A6CD59200D77087 /* ViewTransferDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265867101A6CD59200D77087 /* ViewTransferDemoTests.m */; };
+		2658671C1A6CD7F500D77087 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2658671B1A6CD7F500D77087 /* TabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		2658670A1A6CD59200D77087 /* ViewTransferDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewTransferDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2658670F1A6CD59200D77087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		265867101A6CD59200D77087 /* ViewTransferDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTransferDemoTests.m; sourceTree = "<group>"; };
+		2658671A1A6CD7F500D77087 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		2658671B1A6CD7F500D77087 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				265866F81A6CD59200D77087 /* AppDelegate.h */,
 				265866F91A6CD59200D77087 /* AppDelegate.m */,
+				2658671A1A6CD7F500D77087 /* TabBarViewController.h */,
+				2658671B1A6CD7F500D77087 /* TabBarViewController.m */,
 				265866FB1A6CD59200D77087 /* ViewController.h */,
 				265866FC1A6CD59200D77087 /* ViewController.m */,
 				265866FE1A6CD59200D77087 /* Main.storyboard */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2658671C1A6CD7F500D77087 /* TabBarViewController.m in Sources */,
 				265866FD1A6CD59200D77087 /* ViewController.m in Sources */,
 				265866FA1A6CD59200D77087 /* AppDelegate.m in Sources */,
 				265866F71A6CD59200D77087 /* main.m in Sources */,
