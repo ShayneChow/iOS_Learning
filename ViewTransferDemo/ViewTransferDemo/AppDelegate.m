@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "TabBarViewController.h"
+#import "WebChatViewController.h"
+#import "ContactViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    _window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    TabBarViewController *tabBarController=[[TabBarViewController alloc]init];
+    
+    WebChatViewController *webChatController=[[WebChatViewController alloc]init];
+    ContactViewController *contactController=[[ContactViewController alloc]init];
+    tabBarController.viewControllers=@[webChatController,contactController];
+    //注意默认情况下UITabBarController在加载子视图时是懒加载的，所以这里调用一次contactController，否则在第一次展示时只有第一个控制器tab图标，contactController的tab图标不会显示
+    for (UIViewController *controller in tabBarController.viewControllers) {
+        UIViewController *view= controller.view;
+    }
+    
+    _window.rootViewController=tabBarController;
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 

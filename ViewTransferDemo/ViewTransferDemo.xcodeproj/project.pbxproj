@@ -15,6 +15,12 @@
 		265867051A6CD59200D77087 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265867031A6CD59200D77087 /* LaunchScreen.xib */; };
 		265867111A6CD59200D77087 /* ViewTransferDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265867101A6CD59200D77087 /* ViewTransferDemoTests.m */; };
 		2658671C1A6CD7F500D77087 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2658671B1A6CD7F500D77087 /* TabBarViewController.m */; };
+		2658671F1A6CDD1E00D77087 /* WebChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2658671E1A6CDD1E00D77087 /* WebChatViewController.m */; };
+		265867221A6CDD3900D77087 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265867211A6CDD3900D77087 /* ContactViewController.m */; };
+		265867251A6CFF3E00D77087 /* tabbar_mainframeHL.png in Resources */ = {isa = PBXBuildFile; fileRef = 265867241A6CFF3E00D77087 /* tabbar_mainframeHL.png */; };
+		265867271A6D004000D77087 /* tabbar_contactsHL.png in Resources */ = {isa = PBXBuildFile; fileRef = 265867261A6D004000D77087 /* tabbar_contactsHL.png */; };
+		265867291A6D007300D77087 /* tabbar_contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 265867281A6D007300D77087 /* tabbar_contacts.png */; };
+		2658672B1A6D008300D77087 /* tabbar_mainframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 2658672A1A6D008300D77087 /* tabbar_mainframe.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,14 @@
 		265867101A6CD59200D77087 /* ViewTransferDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTransferDemoTests.m; sourceTree = "<group>"; };
 		2658671A1A6CD7F500D77087 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
 		2658671B1A6CD7F500D77087 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		2658671D1A6CDD1E00D77087 /* WebChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebChatViewController.h; sourceTree = "<group>"; };
+		2658671E1A6CDD1E00D77087 /* WebChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebChatViewController.m; sourceTree = "<group>"; };
+		265867201A6CDD3900D77087 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		265867211A6CDD3900D77087 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		265867241A6CFF3E00D77087 /* tabbar_mainframeHL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_mainframeHL.png; sourceTree = "<group>"; };
+		265867261A6D004000D77087 /* tabbar_contactsHL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_contactsHL.png; sourceTree = "<group>"; };
+		265867281A6D007300D77087 /* tabbar_contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_contacts.png; sourceTree = "<group>"; };
+		2658672A1A6D008300D77087 /* tabbar_mainframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_mainframe.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +102,10 @@
 				265866F91A6CD59200D77087 /* AppDelegate.m */,
 				2658671A1A6CD7F500D77087 /* TabBarViewController.h */,
 				2658671B1A6CD7F500D77087 /* TabBarViewController.m */,
+				2658671D1A6CDD1E00D77087 /* WebChatViewController.h */,
+				2658671E1A6CDD1E00D77087 /* WebChatViewController.m */,
+				265867201A6CDD3900D77087 /* ContactViewController.h */,
+				265867211A6CDD3900D77087 /* ContactViewController.m */,
 				265866FB1A6CD59200D77087 /* ViewController.h */,
 				265866FC1A6CD59200D77087 /* ViewController.m */,
 				265866FE1A6CD59200D77087 /* Main.storyboard */,
@@ -101,6 +119,7 @@
 		265866F41A6CD59200D77087 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				265867231A6CFF2800D77087 /* images */,
 				265866F51A6CD59200D77087 /* Info.plist */,
 				265866F61A6CD59200D77087 /* main.m */,
 			);
@@ -122,6 +141,17 @@
 				2658670F1A6CD59200D77087 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		265867231A6CFF2800D77087 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				265867281A6D007300D77087 /* tabbar_contacts.png */,
+				265867261A6D004000D77087 /* tabbar_contactsHL.png */,
+				2658672A1A6D008300D77087 /* tabbar_mainframe.png */,
+				265867241A6CFF3E00D77087 /* tabbar_mainframeHL.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +234,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2658672B1A6D008300D77087 /* tabbar_mainframe.png in Resources */,
 				265867001A6CD59200D77087 /* Main.storyboard in Resources */,
 				265867051A6CD59200D77087 /* LaunchScreen.xib in Resources */,
+				265867251A6CFF3E00D77087 /* tabbar_mainframeHL.png in Resources */,
 				265867021A6CD59200D77087 /* Images.xcassets in Resources */,
+				265867291A6D007300D77087 /* tabbar_contacts.png in Resources */,
+				265867271A6D004000D77087 /* tabbar_contactsHL.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2658671C1A6CD7F500D77087 /* TabBarViewController.m in Sources */,
+				265867221A6CDD3900D77087 /* ContactViewController.m in Sources */,
 				265866FD1A6CD59200D77087 /* ViewController.m in Sources */,
 				265866FA1A6CD59200D77087 /* AppDelegate.m in Sources */,
 				265866F71A6CD59200D77087 /* main.m in Sources */,
+				2658671F1A6CDD1E00D77087 /* WebChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
