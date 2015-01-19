@@ -24,6 +24,16 @@
 
 @implementation ViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = @"通讯录";
+        self.view.backgroundColor = [UIColor blackColor];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //初始化数据
