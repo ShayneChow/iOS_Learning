@@ -15,6 +15,8 @@
 		26021EA71A807A290096E302 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26021EA51A807A290096E302 /* LaunchScreen.xib */; };
 		26021EB31A807A290096E302 /* __1MapKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021EB21A807A290096E302 /* __1MapKitDemoTests.m */; };
 		26021EBE1A807AFE0096E302 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021EBD1A807AFE0096E302 /* Annotation.m */; };
+		26021EC01A807FF60096E302 /* pinpoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 26021EBF1A807FF60096E302 /* pinpoint.png */; };
+		26021EC21A8080060096E302 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 26021EC11A8080060096E302 /* house.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		26021EB21A807A290096E302 /* __1MapKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __1MapKitDemoTests.m; sourceTree = "<group>"; };
 		26021EBC1A807AFE0096E302 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		26021EBD1A807AFE0096E302 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		26021EBF1A807FF60096E302 /* pinpoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinpoint.png; sourceTree = "<group>"; };
+		26021EC11A8080060096E302 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		26021E961A807A290096E302 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26021EC11A8080060096E302 /* house.png */,
+				26021EBF1A807FF60096E302 /* pinpoint.png */,
 				26021E971A807A290096E302 /* Info.plist */,
 				26021E981A807A290096E302 /* main.m */,
 			);
@@ -206,7 +212,9 @@
 			files = (
 				26021EA21A807A290096E302 /* Main.storyboard in Resources */,
 				26021EA71A807A290096E302 /* LaunchScreen.xib in Resources */,
+				26021EC21A8080060096E302 /* house.png in Resources */,
 				26021EA41A807A290096E302 /* Images.xcassets in Resources */,
+				26021EC01A807FF60096E302 /* pinpoint.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
