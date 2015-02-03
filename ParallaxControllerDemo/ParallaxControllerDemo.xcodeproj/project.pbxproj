@@ -14,6 +14,9 @@
 		26021EDD1A80CED60096E302 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26021EDC1A80CED60096E302 /* Images.xcassets */; };
 		26021EE01A80CED60096E302 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26021EDE1A80CED60096E302 /* LaunchScreen.xib */; };
 		26021EEC1A80CED60096E302 /* ParallaxControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021EEB1A80CED60096E302 /* ParallaxControllerDemoTests.m */; };
+		26021EFB1A80D6E40096E302 /* M6HeaderInsetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021EF71A80D6E40096E302 /* M6HeaderInsetTableView.m */; };
+		26021EFC1A80D6E40096E302 /* M6UniversalParallaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021EF91A80D6E40096E302 /* M6UniversalParallaxViewController.m */; };
+		26021EFD1A80D6E40096E302 /* M6UniversalParallaxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26021EFA1A80D6E40096E302 /* M6UniversalParallaxViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		26021EE51A80CED60096E302 /* ParallaxControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParallaxControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26021EEA1A80CED60096E302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26021EEB1A80CED60096E302 /* ParallaxControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParallaxControllerDemoTests.m; sourceTree = "<group>"; };
+		26021EF61A80D6E40096E302 /* M6HeaderInsetTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M6HeaderInsetTableView.h; sourceTree = "<group>"; };
+		26021EF71A80D6E40096E302 /* M6HeaderInsetTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M6HeaderInsetTableView.m; sourceTree = "<group>"; };
+		26021EF81A80D6E40096E302 /* M6UniversalParallaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M6UniversalParallaxViewController.h; sourceTree = "<group>"; };
+		26021EF91A80D6E40096E302 /* M6UniversalParallaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M6UniversalParallaxViewController.m; sourceTree = "<group>"; };
+		26021EFA1A80D6E40096E302 /* M6UniversalParallaxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = M6UniversalParallaxViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		26021ECE1A80CED60096E302 /* ParallaxControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				26021EF51A80D6E40096E302 /* M6UniversalParallaxViewController */,
 				26021ED31A80CED60096E302 /* AppDelegate.h */,
 				26021ED41A80CED60096E302 /* AppDelegate.m */,
 				26021ED61A80CED60096E302 /* ViewController.h */,
@@ -117,6 +126,18 @@
 				26021EEA1A80CED60096E302 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26021EF51A80D6E40096E302 /* M6UniversalParallaxViewController */ = {
+			isa = PBXGroup;
+			children = (
+				26021EF61A80D6E40096E302 /* M6HeaderInsetTableView.h */,
+				26021EF71A80D6E40096E302 /* M6HeaderInsetTableView.m */,
+				26021EF81A80D6E40096E302 /* M6UniversalParallaxViewController.h */,
+				26021EF91A80D6E40096E302 /* M6UniversalParallaxViewController.m */,
+				26021EFA1A80D6E40096E302 /* M6UniversalParallaxViewController.xib */,
+			);
+			path = M6UniversalParallaxViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +222,7 @@
 			files = (
 				26021EDB1A80CED60096E302 /* Main.storyboard in Resources */,
 				26021EE01A80CED60096E302 /* LaunchScreen.xib in Resources */,
+				26021EFD1A80D6E40096E302 /* M6UniversalParallaxViewController.xib in Resources */,
 				26021EDD1A80CED60096E302 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				26021ED81A80CED60096E302 /* ViewController.m in Sources */,
+				26021EFB1A80D6E40096E302 /* M6HeaderInsetTableView.m in Sources */,
 				26021ED51A80CED60096E302 /* AppDelegate.m in Sources */,
 				26021ED21A80CED60096E302 /* main.m in Sources */,
+				26021EFC1A80D6E40096E302 /* M6UniversalParallaxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
