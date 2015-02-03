@@ -17,8 +17,8 @@
 		26021EFD1A80D6E40096E302 /* M6UniversalParallaxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26021EFA1A80D6E40096E302 /* M6UniversalParallaxViewController.xib */; };
 		26021F011A80D9080096E302 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021F001A80D9080096E302 /* UIImage+ImageEffects.m */; };
 		26021F051A80DBA10096E302 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26021F041A80DBA10096E302 /* Images.xcassets */; };
-		26021F0A1A80E3CC0096E302 /* FancyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021F081A80E3CC0096E302 /* FancyViewController.m */; };
-		26021F0B1A80E3CC0096E302 /* FancyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26021F091A80E3CC0096E302 /* FancyViewController.xib */; };
+		26021F0A1A80E3CC0096E302 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26021F081A80E3CC0096E302 /* HomeViewController.m */; };
+		26021F0B1A80E3CC0096E302 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26021F091A80E3CC0096E302 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +50,9 @@
 		26021EFF1A80D9080096E302 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		26021F001A80D9080096E302 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		26021F041A80DBA10096E302 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		26021F071A80E3CC0096E302 /* FancyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FancyViewController.h; sourceTree = "<group>"; };
-		26021F081A80E3CC0096E302 /* FancyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FancyViewController.m; sourceTree = "<group>"; };
-		26021F091A80E3CC0096E302 /* FancyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FancyViewController.xib; sourceTree = "<group>"; };
+		26021F071A80E3CC0096E302 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		26021F081A80E3CC0096E302 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		26021F091A80E3CC0096E302 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 				26021EF51A80D6E40096E302 /* M6UniversalParallaxViewController */,
 				26021ED31A80CED60096E302 /* AppDelegate.h */,
 				26021ED41A80CED60096E302 /* AppDelegate.m */,
-				26021F061A80E3950096E302 /* FancyViewController */,
+				26021F061A80E3950096E302 /* Home */,
 				26021F041A80DBA10096E302 /* Images.xcassets */,
 				26021ED91A80CED60096E302 /* Main.storyboard */,
 				26021EDE1A80CED60096E302 /* LaunchScreen.xib */,
@@ -153,15 +153,15 @@
 			path = ImageEffects;
 			sourceTree = "<group>";
 		};
-		26021F061A80E3950096E302 /* FancyViewController */ = {
+		26021F061A80E3950096E302 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				26021EFE1A80D9080096E302 /* ImageEffects */,
-				26021F071A80E3CC0096E302 /* FancyViewController.h */,
-				26021F081A80E3CC0096E302 /* FancyViewController.m */,
-				26021F091A80E3CC0096E302 /* FancyViewController.xib */,
+				26021F071A80E3CC0096E302 /* HomeViewController.h */,
+				26021F081A80E3CC0096E302 /* HomeViewController.m */,
+				26021F091A80E3CC0096E302 /* HomeViewController.xib */,
 			);
-			name = FancyViewController;
+			name = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26021EDB1A80CED60096E302 /* Main.storyboard in Resources */,
-				26021F0B1A80E3CC0096E302 /* FancyViewController.xib in Resources */,
+				26021F0B1A80E3CC0096E302 /* HomeViewController.xib in Resources */,
 				26021F051A80DBA10096E302 /* Images.xcassets in Resources */,
 				26021EE01A80CED60096E302 /* LaunchScreen.xib in Resources */,
 				26021EFD1A80D6E40096E302 /* M6UniversalParallaxViewController.xib in Resources */,
@@ -266,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26021F0A1A80E3CC0096E302 /* FancyViewController.m in Sources */,
+				26021F0A1A80E3CC0096E302 /* HomeViewController.m in Sources */,
 				26021EFB1A80D6E40096E302 /* M6HeaderInsetTableView.m in Sources */,
 				26021F011A80D9080096E302 /* UIImage+ImageEffects.m in Sources */,
 				26021ED51A80CED60096E302 /* AppDelegate.m in Sources */,

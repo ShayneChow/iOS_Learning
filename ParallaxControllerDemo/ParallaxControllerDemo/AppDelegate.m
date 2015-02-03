@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "FancyViewController.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    FancyViewController * psvc = [FancyViewController new];
+    HomeViewController * psvc = [HomeViewController new];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:psvc];
     
     self.window.backgroundColor = [UIColor whiteColor];

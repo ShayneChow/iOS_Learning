@@ -6,19 +6,21 @@
 //  Copyright (c) 2014 min60 s.r.o. - Peter Paulis. All rights reserved.
 //
 
-#import "FancyViewController.h"
+#import "HomeViewController.h"
 
 #import "UIImage+ImageEffects.h"
 
-@interface FancyViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation FancyViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"Home";
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
     
